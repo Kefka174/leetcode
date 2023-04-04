@@ -2,11 +2,12 @@
 #include <string>
 using namespace std;
 
-bool isSubsequence(string s, string t) {
-    for (int i = 0; i < s.length(); i++) {
-        while (t[i] != s[i]) {
-            t.erase(i, 1);
-            if (t.length() < s.length()) return false;
+bool isSubsequence(string s, string t) {\
+    int i, j;
+    for (i = 0, j = 0; i < s.length(); i++, j++) {
+        while (t[j] != s[i]) {
+            j++;
+            if (j > t.length()) return false;
         }
     }
     return true;
@@ -21,6 +22,9 @@ int main() {
 
     string s3 = "b", t3 = "c";
     assert(!isSubsequence(s3, t3));
+
+    string s4 = "aaaaaa", t4 = "bbaaaa";
+    assert(!isSubsequence(s4, t4));
 
     return 0;
 }
