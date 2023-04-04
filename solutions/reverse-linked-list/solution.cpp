@@ -24,6 +24,24 @@ ListNode* reverseList(ListNode* head) {
     return head;
 }
 
+ListNode* recursiveHelper(ListNode* current, ListNode*& newHead) {
+    if (current->next == nullptr){
+        newHead = current;
+        return current;
+    }
+    recursiveHelper(current->next, newHead)->next = current;
+    return current;
+}
+
+ListNode* reverseListRecursive(ListNode* head) {
+    if (head == nullptr || head->next == nullptr) return head;
+    ListNode *newHead;
+    recursiveHelper(head, newHead);
+    head->next = nullptr;
+
+    return newHead;
+}
+
 
 
 void printList(ListNode* head) {
