@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <stack>
 using namespace std;
 
 class Node {
@@ -19,15 +20,6 @@ public:
     }
 };
 
-void printIntVector(vector<int> v) {
-    for (int val : v) cout << val << ", ";
-    cout << "\n";
-}
-
-void printNodeVector(vector<Node*> v) {
-    for (Node* node : v) cout << node->val << ", ";
-}
-
 vector<int> preorderRecursive(Node* root) {
     if (root == nullptr) return vector<int>();
     if (root->children.size() == 0) return vector<int>(1, root->val);
@@ -38,4 +30,20 @@ vector<int> preorderRecursive(Node* root) {
         for (auto val : childrenVals) rootVals.push_back(val);
     }
     return rootVals;
+}
+
+vector<int> preorderIterative(Node* root) {
+    if (root == nullptr) return vector<int>();
+    vector<int> vals;
+    stack<Node*> nodeStack;
+    nodeStack.push(root);
+
+    while (nodeStack.size() > 0) {
+        Node* currentNode = nodeStack.top();
+        nodeStack.pop();
+        vals.push_back(currentNode->val);
+        
+        for (auto childIterator = currentNode->children.rbegin(); childIterator != currentNode->children.rend(); childIterator++) nodeStack.push(*childIterator);
+    }
+    return vals;
 }
