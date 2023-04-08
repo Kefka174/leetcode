@@ -10,6 +10,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [142](https://leetcode.com/problems/linked-list-cycle-ii/) | [Linked List Cycle II](solutions/linked-list-cycle-ii) | Medium | [C++](solutions/linked-list-cycle-ii/solution.cpp),  | Algorithms |
 | [205](https://leetcode.com/problems/isomorphic-strings/) | [Isomorphic Strings](solutions/isomorphic-strings) | Easy | [C++](solutions/isomorphic-strings/solution.cpp),  | Algorithms |
 | [206](https://leetcode.com/problems/reverse-linked-list/) | [Reverse Linked List](solutions/reverse-linked-list) | Easy | [C++](solutions/reverse-linked-list/solution.cpp),  | Algorithms |
+| [278](https://leetcode.com/problems/first-bad-version/) | [First Bad Version](solutions/first-bad-version) | Easy | [C++](solutions/first-bad-version/solution.cpp),  | Algorithms |
 | [392](https://leetcode.com/problems/is-subsequence/) | [Is Subsequence](solutions/is-subsequence) | Easy | [C++](solutions/is-subsequence/solution.cpp),  | Algorithms |
 | [409](https://leetcode.com/problems/longest-palindrome/) | [Longest Palindrome](solutions/longest-palindrome) | Easy | [C++](solutions/longest-palindrome/solution.cpp),  | Algorithms |
 | [724](https://leetcode.com/problems/find-pivot-index/) | [Find Pivot Index](solutions/find-pivot-index) | Easy | [C++](solutions/find-pivot-index/solution.cpp),  | Algorithms |
