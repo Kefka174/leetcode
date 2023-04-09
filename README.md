@@ -5,6 +5,8 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | LC # | Challenge Overview | Difficulty | Solutions | Category |
 | ---- | ------------------ | ---------- | --------- | -------- |
 | [21](https://leetcode.com/problems/merge-two-sorted-lists/) | [Merge Two Sorted Lists](solutions/merge-two-sorted-lists) | Easy | [C++](solutions/merge-two-sorted-lists/solution.cpp),  | Algorithms |
+| [94](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Binary Tree Inorder Traversal](solutions/binary-tree-inorder-traversal) | Easy | [C++](solutions/binary-tree-inorder-traversal/solution.cpp),  | Algorithms |
+| [98](https://leetcode.com/problems/validate-binary-search-tree/) | [Validate Binary Search Tree](solutions/validate-binary-search-tree) | Medium | [C++](solutions/validate-binary-search-tree/solution.cpp),  | Algorithms |
 | [102](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Binary Tree Level Order Traversal](solutions/binary-tree-level-order-traversal) | Medium | [C++](solutions/binary-tree-level-order-traversal/solution.cpp),  | Algorithms |
 | [121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Best Time to Buy and Sell Stock](solutions/best-time-to-buy-and-sell-stock) | Easy | [C++](solutions/best-time-to-buy-and-sell-stock/solution.cpp),  | Algorithms |
 | [142](https://leetcode.com/problems/linked-list-cycle-ii/) | [Linked List Cycle II](solutions/linked-list-cycle-ii) | Medium | [C++](solutions/linked-list-cycle-ii/solution.cpp),  | Algorithms |
