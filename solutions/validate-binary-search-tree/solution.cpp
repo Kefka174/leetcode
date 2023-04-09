@@ -1,4 +1,4 @@
-#include <queue>
+#include <stack>
 using namespace std;
 
 struct TreeNode {
@@ -23,4 +23,31 @@ bool isValidBSTRecursive(TreeNode* root) {
     int *min = nullptr;
     int *max = nullptr;
     return recursiveHelper(root, min, max);
+}
+
+void digLeft(TreeNode* n, stack<TreeNode*> &s) {
+    do {
+        s.push(n);
+        n = n->left;
+    } while (n != nullptr);
+}
+
+bool isValidBSTIterative(TreeNode* root) {
+    stack<TreeNode*> traversalStack;
+    stack<TreeNode*> orderedStack;
+    digLeft(root, traversalStack);
+
+    while (traversalStack.size() > 0) { // assemble in-order stack
+        TreeNode *currentNode = traversalStack.top();
+        traversalStack.pop();
+        orderedStack.push(currentNode);
+        if (currentNode->right) digLeft(currentNode->right, traversalStack);
+    }
+
+    while (orderedStack.size() > 1) { // verify orderedStack's values are in order
+        TreeNode* currentNode = orderedStack.top();
+        orderedStack.pop();
+        if (currentNode->val <= orderedStack.top()->val) return false;
+    }
+    return true;
 }
