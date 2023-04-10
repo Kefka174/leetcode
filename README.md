@@ -10,12 +10,15 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [102](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Binary Tree Level Order Traversal](solutions/binary-tree-level-order-traversal) | Medium | [C++](solutions/binary-tree-level-order-traversal/solution.cpp),  | Algorithms |
 | [121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Best Time to Buy and Sell Stock](solutions/best-time-to-buy-and-sell-stock) | Easy | [C++](solutions/best-time-to-buy-and-sell-stock/solution.cpp),  | Algorithms |
 | [142](https://leetcode.com/problems/linked-list-cycle-ii/) | [Linked List Cycle II](solutions/linked-list-cycle-ii) | Medium | [C++](solutions/linked-list-cycle-ii/solution.cpp),  | Algorithms |
+| [200](https://leetcode.com/problems/number-of-islands/) | [Number of Islands](solutions/number-of-islands) | Medium | [C++](solutions/number-of-islands/solution.cpp),  | Algorithms |
 | [205](https://leetcode.com/problems/isomorphic-strings/) | [Isomorphic Strings](solutions/isomorphic-strings) | Easy | [C++](solutions/isomorphic-strings/solution.cpp),  | Algorithms |
 | [206](https://leetcode.com/problems/reverse-linked-list/) | [Reverse Linked List](solutions/reverse-linked-list) | Easy | [C++](solutions/reverse-linked-list/solution.cpp),  | Algorithms |
+| [235](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [Lowest Common Ancestor of a Binary Search Tree](solutions/lowest-common-ancestor-of-a-binary-search-tree) | Medium | [C++](solutions/lowest-common-ancestor-of-a-binary-search-tree/solution.cpp),  | Algorithms |
 | [278](https://leetcode.com/problems/first-bad-version/) | [First Bad Version](solutions/first-bad-version) | Easy | [C++](solutions/first-bad-version/solution.cpp),  | Algorithms |
 | [392](https://leetcode.com/problems/is-subsequence/) | [Is Subsequence](solutions/is-subsequence) | Easy | [C++](solutions/is-subsequence/solution.cpp),  | Algorithms |
 | [409](https://leetcode.com/problems/longest-palindrome/) | [Longest Palindrome](solutions/longest-palindrome) | Easy | [C++](solutions/longest-palindrome/solution.cpp),  | Algorithms |
 | [724](https://leetcode.com/problems/find-pivot-index/) | [Find Pivot Index](solutions/find-pivot-index) | Easy | [C++](solutions/find-pivot-index/solution.cpp),  | Algorithms |
+| [733](https://leetcode.com/problems/flood-fill/) | [Flood Fill](solutions/flood-fill) | Easy | [C++](solutions/flood-fill/solution.cpp),  | Algorithms |
 | [775](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) | [N-ary Tree Preorder Traversal](solutions/n-ary-tree-preorder-traversal) | Easy | [C++](solutions/n-ary-tree-preorder-traversal/solution.cpp),  | Algorithms |
 | [792](https://leetcode.com/problems/binary-search/) | [Binary Search](solutions/binary-search) | Easy | [C++](solutions/binary-search/solution.cpp),  | Algorithms |
 | [908](https://leetcode.com/problems/middle-of-the-linked-list/) | [Middle of the Linked List](solutions/middle-of-the-linked-list) | Easy | [C++](solutions/middle-of-the-linked-list/solution.cpp),  | Algorithms |
