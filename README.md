@@ -5,6 +5,8 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | LC # | Challenge Overview | Difficulty | Solutions | Category |
 | ---- | ------------------ | ---------- | --------- | -------- |
 | [21](https://leetcode.com/problems/merge-two-sorted-lists/) | [Merge Two Sorted Lists](solutions/merge-two-sorted-lists) | Easy | [C++](solutions/merge-two-sorted-lists/solution.cpp),  | Algorithms |
+| [62](https://leetcode.com/problems/unique-paths/) | [Unique Paths](solutions/unique-paths) | Medium | [C++](solutions/unique-paths/solution.cpp),  | Algorithms |
+| [70](https://leetcode.com/problems/climbing-stairs/) | [Climbing Stairs](solutions/climbing-stairs) | Easy | [C++](solutions/climbing-stairs/solution.cpp),  | Algorithms |
 | [94](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Binary Tree Inorder Traversal](solutions/binary-tree-inorder-traversal) | Easy | [C++](solutions/binary-tree-inorder-traversal/solution.cpp),  | Algorithms |
 | [98](https://leetcode.com/problems/validate-binary-search-tree/) | [Validate Binary Search Tree](solutions/validate-binary-search-tree) | Medium | [C++](solutions/validate-binary-search-tree/solution.cpp),  | Algorithms |
 | [102](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Binary Tree Level Order Traversal](solutions/binary-tree-level-order-traversal) | Medium | [C++](solutions/binary-tree-level-order-traversal/solution.cpp),  | Algorithms |
@@ -17,11 +19,14 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [278](https://leetcode.com/problems/first-bad-version/) | [First Bad Version](solutions/first-bad-version) | Easy | [C++](solutions/first-bad-version/solution.cpp),  | Algorithms |
 | [392](https://leetcode.com/problems/is-subsequence/) | [Is Subsequence](solutions/is-subsequence) | Easy | [C++](solutions/is-subsequence/solution.cpp),  | Algorithms |
 | [409](https://leetcode.com/problems/longest-palindrome/) | [Longest Palindrome](solutions/longest-palindrome) | Easy | [C++](solutions/longest-palindrome/solution.cpp),  | Algorithms |
+| [438](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [Find All Anagrams in a String](solutions/find-all-anagrams-in-a-string) | Medium | [C++](solutions/find-all-anagrams-in-a-string/solution.cpp),  | Algorithms |
 | [724](https://leetcode.com/problems/find-pivot-index/) | [Find Pivot Index](solutions/find-pivot-index) | Easy | [C++](solutions/find-pivot-index/solution.cpp),  | Algorithms |
 | [733](https://leetcode.com/problems/flood-fill/) | [Flood Fill](solutions/flood-fill) | Easy | [C++](solutions/flood-fill/solution.cpp),  | Algorithms |
+| [747](https://leetcode.com/problems/min-cost-climbing-stairs/) | [Min Cost Climbing Stairs](solutions/min-cost-climbing-stairs) | Easy | [C++](solutions/min-cost-climbing-stairs/solution.cpp),  | Algorithms |
 | [775](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) | [N-ary Tree Preorder Traversal](solutions/n-ary-tree-preorder-traversal) | Easy | [C++](solutions/n-ary-tree-preorder-traversal/solution.cpp),  | Algorithms |
 | [792](https://leetcode.com/problems/binary-search/) | [Binary Search](solutions/binary-search) | Easy | [C++](solutions/binary-search/solution.cpp),  | Algorithms |
 | [908](https://leetcode.com/problems/middle-of-the-linked-list/) | [Middle of the Linked List](solutions/middle-of-the-linked-list) | Easy | [C++](solutions/middle-of-the-linked-list/solution.cpp),  | Algorithms |
+| [1013](https://leetcode.com/problems/fibonacci-number/) | [Fibonacci Number](solutions/fibonacci-number) | Easy | [C++](solutions/fibonacci-number/solution.cpp),  | Algorithms |
 | [1603](https://leetcode.com/problems/running-sum-of-1d-array/) | [Running Sum of 1d Array](solutions/running-sum-of-1d-array) | Easy | [C++](solutions/running-sum-of-1d-array/solution.cpp),  | Algorithms |
 
 ## Usage
