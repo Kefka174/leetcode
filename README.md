@@ -4,6 +4,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 ## Solutions
 | LC # | Challenge Overview | Difficulty | Solutions | Category |
 | ---- | ------------------ | ---------- | --------- | -------- |
+| [1](https://leetcode.com/problems/two-sum/) | [Two Sum](solutions/two-sum) | Easy | [Python](solutions/two-sum/solution.py),  | Algorithms |
 | [21](https://leetcode.com/problems/merge-two-sorted-lists/) | [Merge Two Sorted Lists](solutions/merge-two-sorted-lists) | Easy | [C++](solutions/merge-two-sorted-lists/solution.cpp),  | Algorithms |
 | [62](https://leetcode.com/problems/unique-paths/) | [Unique Paths](solutions/unique-paths) | Medium | [C++](solutions/unique-paths/solution.cpp),  | Algorithms |
 | [70](https://leetcode.com/problems/climbing-stairs/) | [Climbing Stairs](solutions/climbing-stairs) | Easy | [C++](solutions/climbing-stairs/solution.cpp),  | Algorithms |
@@ -19,6 +20,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [278](https://leetcode.com/problems/first-bad-version/) | [First Bad Version](solutions/first-bad-version) | Easy | [C++](solutions/first-bad-version/solution.cpp),  | Algorithms |
 | [392](https://leetcode.com/problems/is-subsequence/) | [Is Subsequence](solutions/is-subsequence) | Easy | [C++](solutions/is-subsequence/solution.cpp),  | Algorithms |
 | [409](https://leetcode.com/problems/longest-palindrome/) | [Longest Palindrome](solutions/longest-palindrome) | Easy | [C++](solutions/longest-palindrome/solution.cpp),  | Algorithms |
+| [424](https://leetcode.com/problems/longest-repeating-character-replacement/) | [Longest Repeating Character Replacement](solutions/longest-repeating-character-replacement) | Medium | [C++](solutions/longest-repeating-character-replacement/solution.cpp),  | Algorithms |
 | [438](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [Find All Anagrams in a String](solutions/find-all-anagrams-in-a-string) | Medium | [C++](solutions/find-all-anagrams-in-a-string/solution.cpp),  | Algorithms |
 | [724](https://leetcode.com/problems/find-pivot-index/) | [Find Pivot Index](solutions/find-pivot-index) | Easy | [C++](solutions/find-pivot-index/solution.cpp),  | Algorithms |
 | [733](https://leetcode.com/problems/flood-fill/) | [Flood Fill](solutions/flood-fill) | Easy | [C++](solutions/flood-fill/solution.cpp),  | Algorithms |
