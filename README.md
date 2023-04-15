@@ -28,6 +28,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [747](https://leetcode.com/problems/min-cost-climbing-stairs/) | [Min Cost Climbing Stairs](solutions/min-cost-climbing-stairs) | Easy | [C++](solutions/min-cost-climbing-stairs/solution.cpp),  | Algorithms |
 | [775](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) | [N-ary Tree Preorder Traversal](solutions/n-ary-tree-preorder-traversal) | Easy | [C++](solutions/n-ary-tree-preorder-traversal/solution.cpp),  | Algorithms |
 | [792](https://leetcode.com/problems/binary-search/) | [Binary Search](solutions/binary-search) | Easy | [C++](solutions/binary-search/solution.cpp),  | Algorithms |
+| [874](https://leetcode.com/problems/backspace-string-compare/) | [Backspace String Compare](solutions/backspace-string-compare) | Easy | [Python](solutions/backspace-string-compare/solution.py),  | Algorithms |
 | [908](https://leetcode.com/problems/middle-of-the-linked-list/) | [Middle of the Linked List](solutions/middle-of-the-linked-list) | Easy | [C++](solutions/middle-of-the-linked-list/solution.cpp),  | Algorithms |
 | [1013](https://leetcode.com/problems/fibonacci-number/) | [Fibonacci Number](solutions/fibonacci-number) | Easy | [C++](solutions/fibonacci-number/solution.cpp),  | Algorithms |
 | [1603](https://leetcode.com/problems/running-sum-of-1d-array/) | [Running Sum of 1d Array](solutions/running-sum-of-1d-array) | Easy | [C++](solutions/running-sum-of-1d-array/solution.cpp),  | Algorithms |
