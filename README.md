@@ -20,6 +20,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [278](https://leetcode.com/problems/first-bad-version/) | [First Bad Version](solutions/first-bad-version) | Easy | [C++](solutions/first-bad-version/solution.cpp),  | Algorithms |
 | [299](https://leetcode.com/problems/bulls-and-cows/) | [Bulls and Cows](solutions/bulls-and-cows) | Medium | [Python](solutions/bulls-and-cows/solution.py),  | Algorithms |
 | [392](https://leetcode.com/problems/is-subsequence/) | [Is Subsequence](solutions/is-subsequence) | Easy | [C++](solutions/is-subsequence/solution.cpp),  | Algorithms |
+| [394](https://leetcode.com/problems/decode-string/) | [Decode String](solutions/decode-string) | Medium | [Python](solutions/decode-string/solution.py),  | Algorithms |
 | [409](https://leetcode.com/problems/longest-palindrome/) | [Longest Palindrome](solutions/longest-palindrome) | Easy | [C++](solutions/longest-palindrome/solution.cpp),  | Algorithms |
 | [424](https://leetcode.com/problems/longest-repeating-character-replacement/) | [Longest Repeating Character Replacement](solutions/longest-repeating-character-replacement) | Medium | [C++](solutions/longest-repeating-character-replacement/solution.cpp),  | Algorithms |
 | [438](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [Find All Anagrams in a String](solutions/find-all-anagrams-in-a-string) | Medium | [C++](solutions/find-all-anagrams-in-a-string/solution.cpp),  | Algorithms |
@@ -31,6 +32,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [874](https://leetcode.com/problems/backspace-string-compare/) | [Backspace String Compare](solutions/backspace-string-compare) | Easy | [Python](solutions/backspace-string-compare/solution.py),  | Algorithms |
 | [908](https://leetcode.com/problems/middle-of-the-linked-list/) | [Middle of the Linked List](solutions/middle-of-the-linked-list) | Easy | [C++](solutions/middle-of-the-linked-list/solution.cpp),  | Algorithms |
 | [1013](https://leetcode.com/problems/fibonacci-number/) | [Fibonacci Number](solutions/fibonacci-number) | Easy | [C++](solutions/fibonacci-number/solution.cpp),  | Algorithms |
+| [1127](https://leetcode.com/problems/last-stone-weight/) | [Last Stone Weight](solutions/last-stone-weight) | Easy | [Python](solutions/last-stone-weight/solution.py),  | Algorithms |
 | [1603](https://leetcode.com/problems/running-sum-of-1d-array/) | [Running Sum of 1d Array](solutions/running-sum-of-1d-array) | Easy | [C++](solutions/running-sum-of-1d-array/solution.cpp),  | Algorithms |
 
 ## Usage
