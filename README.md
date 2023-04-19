@@ -6,6 +6,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | ---- | ------------------ | ---------- | --------- | -------- |
 | [1](https://leetcode.com/problems/two-sum/) | [Two Sum](solutions/two-sum) | Easy | [Python](solutions/two-sum/solution.py),  | Algorithms |
 | [21](https://leetcode.com/problems/merge-two-sorted-lists/) | [Merge Two Sorted Lists](solutions/merge-two-sorted-lists) | Easy | [C++](solutions/merge-two-sorted-lists/solution.cpp),  | Algorithms |
+| [54](https://leetcode.com/problems/spiral-matrix/) | [Spiral Matrix](solutions/spiral-matrix) | Medium | [Python](solutions/spiral-matrix/solution.py),  | Algorithms |
 | [62](https://leetcode.com/problems/unique-paths/) | [Unique Paths](solutions/unique-paths) | Medium | [C++](solutions/unique-paths/solution.cpp),  | Algorithms |
 | [70](https://leetcode.com/problems/climbing-stairs/) | [Climbing Stairs](solutions/climbing-stairs) | Easy | [C++](solutions/climbing-stairs/solution.cpp),  | Algorithms |
 | [94](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Binary Tree Inorder Traversal](solutions/binary-tree-inorder-traversal) | Easy | [C++](solutions/binary-tree-inorder-traversal/solution.cpp),  | Algorithms |
@@ -14,6 +15,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Best Time to Buy and Sell Stock](solutions/best-time-to-buy-and-sell-stock) | Easy | [C++](solutions/best-time-to-buy-and-sell-stock/solution.cpp),  | Algorithms |
 | [142](https://leetcode.com/problems/linked-list-cycle-ii/) | [Linked List Cycle II](solutions/linked-list-cycle-ii) | Medium | [C++](solutions/linked-list-cycle-ii/solution.cpp),  | Algorithms |
 | [200](https://leetcode.com/problems/number-of-islands/) | [Number of Islands](solutions/number-of-islands) | Medium | [C++](solutions/number-of-islands/solution.cpp),  | Algorithms |
+| [202](https://leetcode.com/problems/happy-number/) | [Happy Number](solutions/happy-number) | Easy | [Python](solutions/happy-number/solution.py),  | Algorithms |
 | [205](https://leetcode.com/problems/isomorphic-strings/) | [Isomorphic Strings](solutions/isomorphic-strings) | Easy | [C++](solutions/isomorphic-strings/solution.cpp),  | Algorithms |
 | [206](https://leetcode.com/problems/reverse-linked-list/) | [Reverse Linked List](solutions/reverse-linked-list) | Easy | [C++](solutions/reverse-linked-list/solution.cpp),  | Algorithms |
 | [235](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [Lowest Common Ancestor of a Binary Search Tree](solutions/lowest-common-ancestor-of-a-binary-search-tree) | Medium | [C++](solutions/lowest-common-ancestor-of-a-binary-search-tree/solution.cpp),  | Algorithms |
@@ -24,6 +26,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [409](https://leetcode.com/problems/longest-palindrome/) | [Longest Palindrome](solutions/longest-palindrome) | Easy | [C++](solutions/longest-palindrome/solution.cpp),  | Algorithms |
 | [424](https://leetcode.com/problems/longest-repeating-character-replacement/) | [Longest Repeating Character Replacement](solutions/longest-repeating-character-replacement) | Medium | [C++](solutions/longest-repeating-character-replacement/solution.cpp),  | Algorithms |
 | [438](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [Find All Anagrams in a String](solutions/find-all-anagrams-in-a-string) | Medium | [C++](solutions/find-all-anagrams-in-a-string/solution.cpp),  | Algorithms |
+| [692](https://leetcode.com/problems/top-k-frequent-words/) | [Top K Frequent Words](solutions/top-k-frequent-words) | Medium | [Python](solutions/top-k-frequent-words/solution.py),  | Algorithms |
 | [724](https://leetcode.com/problems/find-pivot-index/) | [Find Pivot Index](solutions/find-pivot-index) | Easy | [C++](solutions/find-pivot-index/solution.cpp),  | Algorithms |
 | [733](https://leetcode.com/problems/flood-fill/) | [Flood Fill](solutions/flood-fill) | Easy | [C++](solutions/flood-fill/solution.cpp),  | Algorithms |
 | [747](https://leetcode.com/problems/min-cost-climbing-stairs/) | [Min Cost Climbing Stairs](solutions/min-cost-climbing-stairs) | Easy | [C++](solutions/min-cost-climbing-stairs/solution.cpp),  | Algorithms |
