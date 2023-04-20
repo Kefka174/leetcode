@@ -5,7 +5,9 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | LC # | Challenge Overview | Difficulty | Solutions | Category |
 | ---- | ------------------ | ---------- | --------- | -------- |
 | [1](https://leetcode.com/problems/two-sum/) | [Two Sum](solutions/two-sum) | Easy | [Python](solutions/two-sum/solution.py),  | Algorithms |
+| [14](https://leetcode.com/problems/longest-common-prefix/) | [Longest Common Prefix](solutions/longest-common-prefix) | Easy | [Python](solutions/longest-common-prefix/solution.py),  | Algorithms |
 | [21](https://leetcode.com/problems/merge-two-sorted-lists/) | [Merge Two Sorted Lists](solutions/merge-two-sorted-lists) | Easy | [C++](solutions/merge-two-sorted-lists/solution.cpp),  | Algorithms |
+| [43](https://leetcode.com/problems/multiply-strings/) | [Multiply Strings](solutions/multiply-strings) | Medium | [Python](solutions/multiply-strings/solution.py),  | Algorithms |
 | [54](https://leetcode.com/problems/spiral-matrix/) | [Spiral Matrix](solutions/spiral-matrix) | Medium | [Python](solutions/spiral-matrix/solution.py),  | Algorithms |
 | [62](https://leetcode.com/problems/unique-paths/) | [Unique Paths](solutions/unique-paths) | Medium | [C++](solutions/unique-paths/solution.cpp),  | Algorithms |
 | [70](https://leetcode.com/problems/climbing-stairs/) | [Climbing Stairs](solutions/climbing-stairs) | Easy | [C++](solutions/climbing-stairs/solution.cpp),  | Algorithms |
@@ -36,6 +38,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [908](https://leetcode.com/problems/middle-of-the-linked-list/) | [Middle of the Linked List](solutions/middle-of-the-linked-list) | Easy | [C++](solutions/middle-of-the-linked-list/solution.cpp),  | Algorithms |
 | [1013](https://leetcode.com/problems/fibonacci-number/) | [Fibonacci Number](solutions/fibonacci-number) | Easy | [C++](solutions/fibonacci-number/solution.cpp),  | Algorithms |
 | [1127](https://leetcode.com/problems/last-stone-weight/) | [Last Stone Weight](solutions/last-stone-weight) | Easy | [Python](solutions/last-stone-weight/solution.py),  | Algorithms |
+| [1324](https://leetcode.com/problems/where-will-the-ball-fall/) | [Where Will the Ball Fall](solutions/where-will-the-ball-fall) | Medium | [Python](solutions/where-will-the-ball-fall/solution.py),  | Algorithms |
 | [1603](https://leetcode.com/problems/running-sum-of-1d-array/) | [Running Sum of 1d Array](solutions/running-sum-of-1d-array) | Easy | [C++](solutions/running-sum-of-1d-array/solution.cpp),  | Algorithms |
 
 ## Usage
