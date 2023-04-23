@@ -32,6 +32,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [409](https://leetcode.com/problems/longest-palindrome/) | [Longest Palindrome](solutions/longest-palindrome) | Easy | [C++](solutions/longest-palindrome/solution.cpp),  | Algorithms |
 | [424](https://leetcode.com/problems/longest-repeating-character-replacement/) | [Longest Repeating Character Replacement](solutions/longest-repeating-character-replacement) | Medium | [C++](solutions/longest-repeating-character-replacement/solution.cpp),  | Algorithms |
 | [438](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [Find All Anagrams in a String](solutions/find-all-anagrams-in-a-string) | Medium | [C++](solutions/find-all-anagrams-in-a-string/solution.cpp),  | Algorithms |
+| [621](https://leetcode.com/problems/task-scheduler/) | [Task Scheduler](solutions/task-scheduler) | Medium | [Python](solutions/task-scheduler/solution.py),  | Algorithms |
 | [692](https://leetcode.com/problems/top-k-frequent-words/) | [Top K Frequent Words](solutions/top-k-frequent-words) | Medium | [Python](solutions/top-k-frequent-words/solution.py),  | Algorithms |
 | [724](https://leetcode.com/problems/find-pivot-index/) | [Find Pivot Index](solutions/find-pivot-index) | Easy | [C++](solutions/find-pivot-index/solution.cpp),  | Algorithms |
 | [733](https://leetcode.com/problems/flood-fill/) | [Flood Fill](solutions/flood-fill) | Easy | [C++](solutions/flood-fill/solution.cpp),  | Algorithms |
@@ -44,6 +45,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [1127](https://leetcode.com/problems/last-stone-weight/) | [Last Stone Weight](solutions/last-stone-weight) | Easy | [Python](solutions/last-stone-weight/solution.py),  | Algorithms |
 | [1324](https://leetcode.com/problems/where-will-the-ball-fall/) | [Where Will the Ball Fall](solutions/where-will-the-ball-fall) | Medium | [Python](solutions/where-will-the-ball-fall/solution.py),  | Algorithms |
 | [1603](https://leetcode.com/problems/running-sum-of-1d-array/) | [Running Sum of 1d Array](solutions/running-sum-of-1d-array) | Easy | [C++](solutions/running-sum-of-1d-array/solution.cpp),  | Algorithms |
+| [2237](https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/) | [Longest Palindrome by Concatenating Two Letter Words](solutions/longest-palindrome-by-concatenating-two-letter-words) | Medium | [Python](solutions/longest-palindrome-by-concatenating-two-letter-words/solution.py),  | Algorithms |
 
 ## Usage
 Add solutions to LeetCode challenges, inside a directory named after the challenge, to the solutions directory. The directory name must match the name of a LeetCode challenge. If the challenge directory does not contain a README, GitHub Actions will generate one from the challenge description on LeetCode.com and add it to the table on the main repo README.
