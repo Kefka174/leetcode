@@ -44,6 +44,34 @@ class Task:
 
 
 
+def leastIntervalMathematical(tasks, n): # o(n)
+    frequencyCounter = {}
+    maxFrequency = 0
+    tasksWithMaxFrequency = 0
+    for task in tasks: # count the frequencies of each task
+        frequencyCounter[task] = frequencyCounter.get(task, 0) + 1
+        if frequencyCounter[task] > maxFrequency:
+            maxFrequency = frequencyCounter[task]
+            tasksWithMaxFrequency = 1
+        elif frequencyCounter[task] == maxFrequency:
+            tasksWithMaxFrequency += 1
+    
+    # Start by scheduling the tasks with max frequency, with idles inbetween as needed.
+    # Ex. ["A", "A", "A, "B", "B", "B", "C"] n = 2 is scheduled as A,B,_,A,B,_,A,B
+    # Next calculate how many idle slots are in between the maxFrequency tasks.
+    idleSlots = (n - (tasksWithMaxFrequency - 1)) * (maxFrequency - 1)
+    # Then calculate how many tasks exist that don't have maxFrequency.
+    lessFrequentTaskCount = len(tasks) - (maxFrequency * tasksWithMaxFrequency)
+    # Finally, plug those less frequent tasks into the idle slots to find out how many idles are needed.
+    idlesNeeded = idleSlots - lessFrequentTaskCount
+    if idlesNeeded < 0: idlesNeeded = 0 # the minimum number of idles needed is 0
+
+    timeNeeded = len(tasks) + idlesNeeded
+    return timeNeeded
+
+
+
+
 assert leastInterval(["A","A","A","B","B","B"], 2) == 8
 assert leastInterval(["A","A","A","B","B","B"], 0) == 6
 assert leastInterval(["A","A","A","A","A","A","B","C","D","E","F","G"], 2) == 16
