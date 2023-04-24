@@ -23,3 +23,27 @@ def recursiveHelper(node, targetSum, pathStarted):
     total += recursiveHelper(node.left, targetSum - node.val, True)
     total += recursiveHelper(node.right, targetSum - node.val, True)
     return total
+
+
+#####################################################
+
+def pathSum(root, targetSum): # o(n) time and space
+    return pathsInBranch(root, targetSum, 0, {0:1})
+
+def pathsInBranch(node, targetSum, sumFromRootToNode, branchSums):
+    if not node: return 0
+    total = 0
+    # check if a valid path ends at current node
+    pathSumNeeded = sumFromRootToNode + node.val - targetSum
+    if pathSumNeeded in branchSums: total += branchSums[pathSumNeeded]
+    
+    # add node to branchSums as a potential start of path
+    branchSums[sumFromRootToNode + node.val] = branchSums.get(sumFromRootToNode + node.val, 0) + 1
+    # visit children
+    total += pathsInBranch(node.left, targetSum, sumFromRootToNode + node.val, branchSums)
+    total += pathsInBranch(node.right, targetSum, sumFromRootToNode + node.val, branchSums)
+    # remove node from branchSums as a potential start of path so it won't affect other branches
+    branchSums[sumFromRootToNode + node.val] -= 1
+    if branchSums[sumFromRootToNode + node.val] == 0: branchSums.pop(sumFromRootToNode + node.val)
+
+    return total
