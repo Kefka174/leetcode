@@ -26,20 +26,24 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [144](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Binary Tree Preorder Traversal](solutions/binary-tree-preorder-traversal) | Easy | [Python](solutions/binary-tree-preorder-traversal/solution.py),  | Algorithms |
 | [148](https://leetcode.com/problems/sort-list/) | [Sort List](solutions/sort-list) | Medium | [Python](solutions/sort-list/solution.py),  | Algorithms |
 | [173](https://leetcode.com/problems/binary-search-tree-iterator/) | [Binary Search Tree Iterator](solutions/binary-search-tree-iterator) | Medium | [Python](solutions/binary-search-tree-iterator/solution.py),  | Algorithms |
+| [198](https://leetcode.com/problems/house-robber/) | [House Robber](solutions/house-robber) | Medium | [Python](solutions/house-robber/solution.py),  | Algorithms |
 | [200](https://leetcode.com/problems/number-of-islands/) | [Number of Islands](solutions/number-of-islands) | Medium | [C++](solutions/number-of-islands/solution.cpp),  | Algorithms |
 | [202](https://leetcode.com/problems/happy-number/) | [Happy Number](solutions/happy-number) | Easy | [Python](solutions/happy-number/solution.py),  | Algorithms |
 | [205](https://leetcode.com/problems/isomorphic-strings/) | [Isomorphic Strings](solutions/isomorphic-strings) | Easy | [C++](solutions/isomorphic-strings/solution.cpp),  | Algorithms |
 | [206](https://leetcode.com/problems/reverse-linked-list/) | [Reverse Linked List](solutions/reverse-linked-list) | Easy | [C++](solutions/reverse-linked-list/solution.cpp),  | Algorithms |
+| [210](https://leetcode.com/problems/course-schedule-ii/) | [Course Schedule II](solutions/course-schedule-ii) | Medium | [Python](solutions/course-schedule-ii/solution.py),  | Algorithms |
 | [226](https://leetcode.com/problems/invert-binary-tree/) | [Invert Binary Tree](solutions/invert-binary-tree) | Easy | [Python](solutions/invert-binary-tree/solution.py),  | Algorithms |
 | [230](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [Kth Smallest Element in a BST](solutions/kth-smallest-element-in-a-bst) | Medium | [Python](solutions/kth-smallest-element-in-a-bst/solution.py),  | Algorithms |
 | [234](https://leetcode.com/problems/palindrome-linked-list/) | [Palindrome Linked List](solutions/palindrome-linked-list) | Easy | [Python](solutions/palindrome-linked-list/solution.py),  | Algorithms |
 | [235](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [Lowest Common Ancestor of a Binary Search Tree](solutions/lowest-common-ancestor-of-a-binary-search-tree) | Medium | [C++](solutions/lowest-common-ancestor-of-a-binary-search-tree/solution.cpp),  | Algorithms |
 | [278](https://leetcode.com/problems/first-bad-version/) | [First Bad Version](solutions/first-bad-version) | Easy | [C++](solutions/first-bad-version/solution.cpp),  | Algorithms |
 | [299](https://leetcode.com/problems/bulls-and-cows/) | [Bulls and Cows](solutions/bulls-and-cows) | Medium | [Python](solutions/bulls-and-cows/solution.py),  | Algorithms |
+| [322](https://leetcode.com/problems/coin-change/) | [Coin Change](solutions/coin-change) | Medium | [Python](solutions/coin-change/solution.py),  | Algorithms |
 | [328](https://leetcode.com/problems/odd-even-linked-list/) | [Odd Even Linked List](solutions/odd-even-linked-list) | Medium | [Python](solutions/odd-even-linked-list/solution.py),  | Algorithms |
 | [392](https://leetcode.com/problems/is-subsequence/) | [Is Subsequence](solutions/is-subsequence) | Easy | [C++](solutions/is-subsequence/solution.cpp),  | Algorithms |
 | [394](https://leetcode.com/problems/decode-string/) | [Decode String](solutions/decode-string) | Medium | [Python](solutions/decode-string/solution.py),  | Algorithms |
 | [409](https://leetcode.com/problems/longest-palindrome/) | [Longest Palindrome](solutions/longest-palindrome) | Easy | [C++](solutions/longest-palindrome/solution.cpp),  | Algorithms |
+| [417](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [Pacific Atlantic Water Flow](solutions/pacific-atlantic-water-flow) | Medium | [Python](solutions/pacific-atlantic-water-flow/solution.py),  | Algorithms |
 | [424](https://leetcode.com/problems/longest-repeating-character-replacement/) | [Longest Repeating Character Replacement](solutions/longest-repeating-character-replacement) | Medium | [C++](solutions/longest-repeating-character-replacement/solution.cpp),  | Algorithms |
 | [437](https://leetcode.com/problems/path-sum-iii/) | [Path Sum III](solutions/path-sum-iii) | Medium | [Python](solutions/path-sum-iii/solution.py),  | Algorithms |
 | [438](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [Find All Anagrams in a String](solutions/find-all-anagrams-in-a-string) | Medium | [C++](solutions/find-all-anagrams-in-a-string/solution.cpp),  | Algorithms |
@@ -51,6 +55,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [747](https://leetcode.com/problems/min-cost-climbing-stairs/) | [Min Cost Climbing Stairs](solutions/min-cost-climbing-stairs) | Easy | [C++](solutions/min-cost-climbing-stairs/solution.cpp),  | Algorithms |
 | [775](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) | [N-ary Tree Preorder Traversal](solutions/n-ary-tree-preorder-traversal) | Easy | [C++](solutions/n-ary-tree-preorder-traversal/solution.cpp),  | Algorithms |
 | [792](https://leetcode.com/problems/binary-search/) | [Binary Search](solutions/binary-search) | Easy | [C++](solutions/binary-search/solution.cpp),  | Algorithms |
+| [833](https://leetcode.com/problems/bus-routes/) | [Bus Routes](solutions/bus-routes) | Hard | [Python](solutions/bus-routes/solution.py),  | Algorithms |
 | [874](https://leetcode.com/problems/backspace-string-compare/) | [Backspace String Compare](solutions/backspace-string-compare) | Easy | [Python](solutions/backspace-string-compare/solution.py),  | Algorithms |
 | [908](https://leetcode.com/problems/middle-of-the-linked-list/) | [Middle of the Linked List](solutions/middle-of-the-linked-list) | Easy | [C++](solutions/middle-of-the-linked-list/solution.cpp),  | Algorithms |
 | [1013](https://leetcode.com/problems/fibonacci-number/) | [Fibonacci Number](solutions/fibonacci-number) | Easy | [C++](solutions/fibonacci-number/solution.cpp),  | Algorithms |
