@@ -4,6 +4,22 @@ from collections import OrderedDict
 :type amount: int
 :rtype: int
 """
+# bottom-up dp
+def coinChangeDP(coins, amount):
+    minCoinsToTarget = {}
+    minCoinsToTarget[0] = 0
+
+    for target in range(1, amount + 1):
+        if target not in minCoinsToTarget: minCoinsToTarget[target] = float('inf')
+        for coin in coins:
+            if coin <= target:
+                minCoinsToTarget[target] = min(minCoinsToTarget[target], minCoinsToTarget[target - coin] + 1)
+
+    if minCoinsToTarget[amount] == float('inf'): return -1
+    return minCoinsToTarget[amount]
+
+
+
 # top-down dfs, each target up to ammount gets visited twice at most
 def coinChange(coins, amount):
     minCoinsToTarget = {}
@@ -44,9 +60,9 @@ def coinChangeUnoptomized(coins, amount):
 
 
 
-assert coinChange([1,2,5], 11) == 3
-assert coinChange([1,2,5], 4) == 2
-assert coinChange([2], 3) == -1
-assert coinChange([1], 0) == 0
-assert coinChange([7,5,1], 10) == 2
-assert coinChange([3,7,405,436], 8839) == 25
+assert coinChangeDP([1,2,5], 11) == 3
+assert coinChangeDP([1,2,5], 4) == 2
+assert coinChangeDP([2], 3) == -1
+assert coinChangeDP([1], 0) == 0
+assert coinChangeDP([7,5,1], 10) == 2
+assert coinChangeDP([3,7,405,436], 8839) == 25
