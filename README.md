@@ -5,17 +5,23 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | LC # | Challenge Overview | Difficulty | Solutions | Category |
 | ---- | ------------------ | ---------- | --------- | -------- |
 | [1](https://leetcode.com/problems/two-sum/) | [Two Sum](solutions/two-sum) | Easy | [Python](solutions/two-sum/solution.py),  | Algorithms |
+| [3](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Longest Substring Without Repeating Characters](solutions/longest-substring-without-repeating-characters) | Medium | [Python](solutions/longest-substring-without-repeating-characters/solution.py),  | Algorithms |
 | [14](https://leetcode.com/problems/longest-common-prefix/) | [Longest Common Prefix](solutions/longest-common-prefix) | Easy | [Python](solutions/longest-common-prefix/solution.py),  | Algorithms |
+| [16](https://leetcode.com/problems/3sum-closest/) | [3Sum Closest](solutions/3sum-closest) | Medium | [Python](solutions/3sum-closest/solution.py),  | Algorithms |
 | [19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [Remove Nth Node From End of List](solutions/remove-nth-node-from-end-of-list) | Medium | [Python](solutions/remove-nth-node-from-end-of-list/solution.py),  | Algorithms |
 | [21](https://leetcode.com/problems/merge-two-sorted-lists/) | [Merge Two Sorted Lists](solutions/merge-two-sorted-lists) | Easy | [C++](solutions/merge-two-sorted-lists/solution.cpp),  | Algorithms |
 | [33](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [Search in Rotated Sorted Array](solutions/search-in-rotated-sorted-array) | Medium | [Python](solutions/search-in-rotated-sorted-array/solution.py),  | Algorithms |
 | [43](https://leetcode.com/problems/multiply-strings/) | [Multiply Strings](solutions/multiply-strings) | Medium | [Python](solutions/multiply-strings/solution.py),  | Algorithms |
 | [54](https://leetcode.com/problems/spiral-matrix/) | [Spiral Matrix](solutions/spiral-matrix) | Medium | [Python](solutions/spiral-matrix/solution.py),  | Algorithms |
+| [57](https://leetcode.com/problems/insert-interval/) | [Insert Interval](solutions/insert-interval) | Medium | [Python](solutions/insert-interval/solution.py),  | Algorithms |
 | [62](https://leetcode.com/problems/unique-paths/) | [Unique Paths](solutions/unique-paths) | Medium | [C++](solutions/unique-paths/solution.cpp),  | Algorithms |
 | [70](https://leetcode.com/problems/climbing-stairs/) | [Climbing Stairs](solutions/climbing-stairs) | Easy | [C++](solutions/climbing-stairs/solution.cpp),  | Algorithms |
 | [74](https://leetcode.com/problems/search-a-2d-matrix/) | [Search a 2D Matrix](solutions/search-a-2d-matrix) | Medium | [Python](solutions/search-a-2d-matrix/solution.py),  | Algorithms |
+| [76](https://leetcode.com/problems/minimum-window-substring/) | [Minimum Window Substring](solutions/minimum-window-substring) | Hard | [Python](solutions/minimum-window-substring/solution.py),  | Algorithms |
 | [94](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Binary Tree Inorder Traversal](solutions/binary-tree-inorder-traversal) | Easy | [C++](solutions/binary-tree-inorder-traversal/solution.cpp),  | Algorithms |
 | [98](https://leetcode.com/problems/validate-binary-search-tree/) | [Validate Binary Search Tree](solutions/validate-binary-search-tree) | Medium | [C++](solutions/validate-binary-search-tree/solution.cpp),  | Algorithms |
+| [100](https://leetcode.com/problems/same-tree/) | [Same Tree](solutions/same-tree) | Easy | [Python](solutions/same-tree/solution.py),  | Algorithms |
+| [101](https://leetcode.com/problems/symmetric-tree/) | [Symmetric Tree](solutions/symmetric-tree) | Easy | [Python](solutions/symmetric-tree/solution.py),  | Algorithms |
 | [102](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Binary Tree Level Order Traversal](solutions/binary-tree-level-order-traversal) | Medium | [C++](solutions/binary-tree-level-order-traversal/solution.cpp),  | Algorithms |
 | [104](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Maximum Depth of Binary Tree](solutions/maximum-depth-of-binary-tree) | Easy | [Python](solutions/maximum-depth-of-binary-tree/solution.py),  | Algorithms |
 | [108](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | [Convert Sorted Array to Binary Search Tree](solutions/convert-sorted-array-to-binary-search-tree) | Easy | [Python](solutions/convert-sorted-array-to-binary-search-tree/solution.py),  | Algorithms |
@@ -25,15 +31,20 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [142](https://leetcode.com/problems/linked-list-cycle-ii/) | [Linked List Cycle II](solutions/linked-list-cycle-ii) | Medium | [C++](solutions/linked-list-cycle-ii/solution.cpp),  | Algorithms |
 | [144](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Binary Tree Preorder Traversal](solutions/binary-tree-preorder-traversal) | Easy | [Python](solutions/binary-tree-preorder-traversal/solution.py),  | Algorithms |
 | [148](https://leetcode.com/problems/sort-list/) | [Sort List](solutions/sort-list) | Medium | [Python](solutions/sort-list/solution.py),  | Algorithms |
+| [152](https://leetcode.com/problems/maximum-product-subarray/) | [Maximum Product Subarray](solutions/maximum-product-subarray) | Medium | [Python](solutions/maximum-product-subarray/solution.py),  | Algorithms |
+| [155](https://leetcode.com/problems/min-stack/) | [Min Stack](solutions/min-stack) | Medium | [Python](solutions/min-stack/solution.py),  | Algorithms |
 | [173](https://leetcode.com/problems/binary-search-tree-iterator/) | [Binary Search Tree Iterator](solutions/binary-search-tree-iterator) | Medium | [Python](solutions/binary-search-tree-iterator/solution.py),  | Algorithms |
 | [198](https://leetcode.com/problems/house-robber/) | [House Robber](solutions/house-robber) | Medium | [Python](solutions/house-robber/solution.py),  | Algorithms |
+| [199](https://leetcode.com/problems/binary-tree-right-side-view/) | [Binary Tree Right Side View](solutions/binary-tree-right-side-view) | Medium | [Python](solutions/binary-tree-right-side-view/solution.py),  | Algorithms |
 | [200](https://leetcode.com/problems/number-of-islands/) | [Number of Islands](solutions/number-of-islands) | Medium | [C++](solutions/number-of-islands/solution.cpp),  | Algorithms |
 | [202](https://leetcode.com/problems/happy-number/) | [Happy Number](solutions/happy-number) | Easy | [Python](solutions/happy-number/solution.py),  | Algorithms |
 | [205](https://leetcode.com/problems/isomorphic-strings/) | [Isomorphic Strings](solutions/isomorphic-strings) | Easy | [C++](solutions/isomorphic-strings/solution.cpp),  | Algorithms |
 | [206](https://leetcode.com/problems/reverse-linked-list/) | [Reverse Linked List](solutions/reverse-linked-list) | Easy | [C++](solutions/reverse-linked-list/solution.cpp),  | Algorithms |
+| [208](https://leetcode.com/problems/implement-trie-prefix-tree/) | [Implement Trie (Prefix Tree)](solutions/implement-trie-prefix-tree) | Medium | [Python](solutions/implement-trie-prefix-tree/solution.py),  | Algorithms |
 | [210](https://leetcode.com/problems/course-schedule-ii/) | [Course Schedule II](solutions/course-schedule-ii) | Medium | [Python](solutions/course-schedule-ii/solution.py),  | Algorithms |
 | [226](https://leetcode.com/problems/invert-binary-tree/) | [Invert Binary Tree](solutions/invert-binary-tree) | Easy | [Python](solutions/invert-binary-tree/solution.py),  | Algorithms |
 | [230](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [Kth Smallest Element in a BST](solutions/kth-smallest-element-in-a-bst) | Medium | [Python](solutions/kth-smallest-element-in-a-bst/solution.py),  | Algorithms |
+| [232](https://leetcode.com/problems/implement-queue-using-stacks/) | [Implement Queue using Stacks](solutions/implement-queue-using-stacks) | Easy | [Python](solutions/implement-queue-using-stacks/solution.py),  | Algorithms |
 | [234](https://leetcode.com/problems/palindrome-linked-list/) | [Palindrome Linked List](solutions/palindrome-linked-list) | Easy | [Python](solutions/palindrome-linked-list/solution.py),  | Algorithms |
 | [235](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [Lowest Common Ancestor of a Binary Search Tree](solutions/lowest-common-ancestor-of-a-binary-search-tree) | Medium | [C++](solutions/lowest-common-ancestor-of-a-binary-search-tree/solution.cpp),  | Algorithms |
 | [278](https://leetcode.com/problems/first-bad-version/) | [First Bad Version](solutions/first-bad-version) | Easy | [C++](solutions/first-bad-version/solution.cpp),  | Algorithms |
@@ -43,6 +54,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [392](https://leetcode.com/problems/is-subsequence/) | [Is Subsequence](solutions/is-subsequence) | Easy | [C++](solutions/is-subsequence/solution.cpp),  | Algorithms |
 | [394](https://leetcode.com/problems/decode-string/) | [Decode String](solutions/decode-string) | Medium | [Python](solutions/decode-string/solution.py),  | Algorithms |
 | [409](https://leetcode.com/problems/longest-palindrome/) | [Longest Palindrome](solutions/longest-palindrome) | Easy | [C++](solutions/longest-palindrome/solution.cpp),  | Algorithms |
+| [416](https://leetcode.com/problems/partition-equal-subset-sum/) | [Partition Equal Subset Sum](solutions/partition-equal-subset-sum) | Medium | [Python](solutions/partition-equal-subset-sum/solution.py),  | Algorithms |
 | [417](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [Pacific Atlantic Water Flow](solutions/pacific-atlantic-water-flow) | Medium | [Python](solutions/pacific-atlantic-water-flow/solution.py),  | Algorithms |
 | [424](https://leetcode.com/problems/longest-repeating-character-replacement/) | [Longest Repeating Character Replacement](solutions/longest-repeating-character-replacement) | Medium | [C++](solutions/longest-repeating-character-replacement/solution.cpp),  | Algorithms |
 | [437](https://leetcode.com/problems/path-sum-iii/) | [Path Sum III](solutions/path-sum-iii) | Medium | [Python](solutions/path-sum-iii/solution.py),  | Algorithms |
