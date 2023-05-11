@@ -47,3 +47,22 @@ vector<vector<int>> permuteRecursive(vector<int>& nums) {
     }
     return permutations;
 }
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+vector<vector<int>> permuteRecursiveSwapping(vector<int>& nums) { // fastest because vectors/sets aren't being copied
+    vector<vector<int>> permutations;
+    recursiveHelper(nums, 0, permutations);
+    return permutations;
+}
+
+void recursiveHelper(vector<int>& nums, int swappingNum, vector<vector<int>>& permutations) {
+    if (swappingNum == nums.size()) permutations.push_back(nums);
+    else {
+        for (int i = swappingNum; i < nums.size(); i++) {
+            swap(nums[i], nums[swappingNum]);
+            recursiveHelper(nums, swappingNum + 1, permutations);
+            swap(nums[i], nums[swappingNum]);
+        }
+    }
+}
