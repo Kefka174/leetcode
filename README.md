@@ -11,8 +11,11 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [Remove Nth Node From End of List](solutions/remove-nth-node-from-end-of-list) | Medium | [Python](solutions/remove-nth-node-from-end-of-list/solution.py),  | Algorithms |
 | [21](https://leetcode.com/problems/merge-two-sorted-lists/) | [Merge Two Sorted Lists](solutions/merge-two-sorted-lists) | Easy | [C++](solutions/merge-two-sorted-lists/solution.cpp),  | Algorithms |
 | [33](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [Search in Rotated Sorted Array](solutions/search-in-rotated-sorted-array) | Medium | [Python](solutions/search-in-rotated-sorted-array/solution.py),  | Algorithms |
+| [39](https://leetcode.com/problems/combination-sum/) | [Combination Sum](solutions/combination-sum) | Medium | [C++](solutions/combination-sum/solution.cpp),  | Algorithms |
 | [43](https://leetcode.com/problems/multiply-strings/) | [Multiply Strings](solutions/multiply-strings) | Medium | [Python](solutions/multiply-strings/solution.py),  | Algorithms |
+| [46](https://leetcode.com/problems/permutations/) | [Permutations](solutions/permutations) | Medium | [C++](solutions/permutations/solution.cpp),  | Algorithms |
 | [54](https://leetcode.com/problems/spiral-matrix/) | [Spiral Matrix](solutions/spiral-matrix) | Medium | [Python](solutions/spiral-matrix/solution.py),  | Algorithms |
+| [56](https://leetcode.com/problems/merge-intervals/) | [Merge Intervals](solutions/merge-intervals) | Medium | [Python](solutions/merge-intervals/solution.py),  | Algorithms |
 | [57](https://leetcode.com/problems/insert-interval/) | [Insert Interval](solutions/insert-interval) | Medium | [Python](solutions/insert-interval/solution.py),  | Algorithms |
 | [62](https://leetcode.com/problems/unique-paths/) | [Unique Paths](solutions/unique-paths) | Medium | [C++](solutions/unique-paths/solution.cpp),  | Algorithms |
 | [70](https://leetcode.com/problems/climbing-stairs/) | [Climbing Stairs](solutions/climbing-stairs) | Easy | [C++](solutions/climbing-stairs/solution.cpp),  | Algorithms |
@@ -43,6 +46,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [208](https://leetcode.com/problems/implement-trie-prefix-tree/) | [Implement Trie (Prefix Tree)](solutions/implement-trie-prefix-tree) | Medium | [Python](solutions/implement-trie-prefix-tree/solution.py),  | Algorithms |
 | [210](https://leetcode.com/problems/course-schedule-ii/) | [Course Schedule II](solutions/course-schedule-ii) | Medium | [Python](solutions/course-schedule-ii/solution.py),  | Algorithms |
 | [226](https://leetcode.com/problems/invert-binary-tree/) | [Invert Binary Tree](solutions/invert-binary-tree) | Easy | [Python](solutions/invert-binary-tree/solution.py),  | Algorithms |
+| [227](https://leetcode.com/problems/basic-calculator-ii/) | [Basic Calculator II](solutions/basic-calculator-ii) | Medium | [Python](solutions/basic-calculator-ii/solution.py),  | Algorithms |
 | [230](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [Kth Smallest Element in a BST](solutions/kth-smallest-element-in-a-bst) | Medium | [Python](solutions/kth-smallest-element-in-a-bst/solution.py),  | Algorithms |
 | [232](https://leetcode.com/problems/implement-queue-using-stacks/) | [Implement Queue using Stacks](solutions/implement-queue-using-stacks) | Easy | [Python](solutions/implement-queue-using-stacks/solution.py),  | Algorithms |
 | [234](https://leetcode.com/problems/palindrome-linked-list/) | [Palindrome Linked List](solutions/palindrome-linked-list) | Easy | [Python](solutions/palindrome-linked-list/solution.py),  | Algorithms |
@@ -60,16 +64,19 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [437](https://leetcode.com/problems/path-sum-iii/) | [Path Sum III](solutions/path-sum-iii) | Medium | [Python](solutions/path-sum-iii/solution.py),  | Algorithms |
 | [438](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [Find All Anagrams in a String](solutions/find-all-anagrams-in-a-string) | Medium | [C++](solutions/find-all-anagrams-in-a-string/solution.cpp),  | Algorithms |
 | [543](https://leetcode.com/problems/diameter-of-binary-tree/) | [Diameter of Binary Tree](solutions/diameter-of-binary-tree) | Easy | [Python](solutions/diameter-of-binary-tree/solution.py),  | Algorithms |
+| [547](https://leetcode.com/problems/number-of-provinces/) | [Number of Provinces](solutions/number-of-provinces) | Medium | [C++](solutions/number-of-provinces/solution.cpp),  | Algorithms |
 | [621](https://leetcode.com/problems/task-scheduler/) | [Task Scheduler](solutions/task-scheduler) | Medium | [Python](solutions/task-scheduler/solution.py),  | Algorithms |
 | [692](https://leetcode.com/problems/top-k-frequent-words/) | [Top K Frequent Words](solutions/top-k-frequent-words) | Medium | [Python](solutions/top-k-frequent-words/solution.py),  | Algorithms |
 | [724](https://leetcode.com/problems/find-pivot-index/) | [Find Pivot Index](solutions/find-pivot-index) | Easy | [C++](solutions/find-pivot-index/solution.cpp),  | Algorithms |
 | [733](https://leetcode.com/problems/flood-fill/) | [Flood Fill](solutions/flood-fill) | Easy | [C++](solutions/flood-fill/solution.cpp),  | Algorithms |
+| [735](https://leetcode.com/problems/asteroid-collision/) | [Asteroid Collision](solutions/asteroid-collision) | Medium | [Python](solutions/asteroid-collision/solution.py),  | Algorithms |
 | [747](https://leetcode.com/problems/min-cost-climbing-stairs/) | [Min Cost Climbing Stairs](solutions/min-cost-climbing-stairs) | Easy | [C++](solutions/min-cost-climbing-stairs/solution.cpp),  | Algorithms |
 | [775](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) | [N-ary Tree Preorder Traversal](solutions/n-ary-tree-preorder-traversal) | Easy | [C++](solutions/n-ary-tree-preorder-traversal/solution.cpp),  | Algorithms |
 | [792](https://leetcode.com/problems/binary-search/) | [Binary Search](solutions/binary-search) | Easy | [C++](solutions/binary-search/solution.cpp),  | Algorithms |
 | [833](https://leetcode.com/problems/bus-routes/) | [Bus Routes](solutions/bus-routes) | Hard | [Python](solutions/bus-routes/solution.py),  | Algorithms |
 | [874](https://leetcode.com/problems/backspace-string-compare/) | [Backspace String Compare](solutions/backspace-string-compare) | Easy | [Python](solutions/backspace-string-compare/solution.py),  | Algorithms |
 | [908](https://leetcode.com/problems/middle-of-the-linked-list/) | [Middle of the Linked List](solutions/middle-of-the-linked-list) | Easy | [C++](solutions/middle-of-the-linked-list/solution.cpp),  | Algorithms |
+| [984](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/) | [Most Stones Removed with Same Row or Column](solutions/most-stones-removed-with-same-row-or-column) | Medium | [C++](solutions/most-stones-removed-with-same-row-or-column/solution.cpp),  | Algorithms |
 | [1013](https://leetcode.com/problems/fibonacci-number/) | [Fibonacci Number](solutions/fibonacci-number) | Easy | [C++](solutions/fibonacci-number/solution.cpp),  | Algorithms |
 | [1036](https://leetcode.com/problems/rotting-oranges/) | [Rotting Oranges](solutions/rotting-oranges) | Medium | [Python](solutions/rotting-oranges/solution.py),  | Algorithms |
 | [1127](https://leetcode.com/problems/last-stone-weight/) | [Last Stone Weight](solutions/last-stone-weight) | Easy | [Python](solutions/last-stone-weight/solution.py),  | Algorithms |
