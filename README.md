@@ -32,6 +32,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [111](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [Minimum Depth of Binary Tree](solutions/minimum-depth-of-binary-tree) | Easy | [Python](solutions/minimum-depth-of-binary-tree/solution.py),  | Algorithms |
 | [121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Best Time to Buy and Sell Stock](solutions/best-time-to-buy-and-sell-stock) | Easy | [C++](solutions/best-time-to-buy-and-sell-stock/solution.cpp),  | Algorithms |
 | [142](https://leetcode.com/problems/linked-list-cycle-ii/) | [Linked List Cycle II](solutions/linked-list-cycle-ii) | Medium | [C++](solutions/linked-list-cycle-ii/solution.cpp),  | Algorithms |
+| [143](https://leetcode.com/problems/reorder-list/) | [Reorder List](solutions/reorder-list) | Medium | [C++](solutions/reorder-list/solution.cpp),  | Algorithms |
 | [144](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Binary Tree Preorder Traversal](solutions/binary-tree-preorder-traversal) | Easy | [Python](solutions/binary-tree-preorder-traversal/solution.py),  | Algorithms |
 | [148](https://leetcode.com/problems/sort-list/) | [Sort List](solutions/sort-list) | Medium | [Python](solutions/sort-list/solution.py),  | Algorithms |
 | [152](https://leetcode.com/problems/maximum-product-subarray/) | [Maximum Product Subarray](solutions/maximum-product-subarray) | Medium | [Python](solutions/maximum-product-subarray/solution.py),  | Algorithms |
@@ -45,6 +46,9 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [206](https://leetcode.com/problems/reverse-linked-list/) | [Reverse Linked List](solutions/reverse-linked-list) | Easy | [C++](solutions/reverse-linked-list/solution.cpp),  | Algorithms |
 | [208](https://leetcode.com/problems/implement-trie-prefix-tree/) | [Implement Trie (Prefix Tree)](solutions/implement-trie-prefix-tree) | Medium | [Python](solutions/implement-trie-prefix-tree/solution.py),  | Algorithms |
 | [210](https://leetcode.com/problems/course-schedule-ii/) | [Course Schedule II](solutions/course-schedule-ii) | Medium | [Python](solutions/course-schedule-ii/solution.py),  | Algorithms |
+| [217](https://leetcode.com/problems/contains-duplicate/) | [Contains Duplicate](solutions/contains-duplicate) | Easy | [C++](solutions/contains-duplicate/solution.cpp),  | Algorithms |
+| [219](https://leetcode.com/problems/contains-duplicate-ii/) | [Contains Duplicate II](solutions/contains-duplicate-ii) | Easy | [C++](solutions/contains-duplicate-ii/solution.cpp),  | Algorithms |
+| [220](https://leetcode.com/problems/contains-duplicate-iii/) | [Contains Duplicate III](solutions/contains-duplicate-iii) | Hard | [C++](solutions/contains-duplicate-iii/solution.cpp),  | Algorithms |
 | [226](https://leetcode.com/problems/invert-binary-tree/) | [Invert Binary Tree](solutions/invert-binary-tree) | Easy | [Python](solutions/invert-binary-tree/solution.py),  | Algorithms |
 | [227](https://leetcode.com/problems/basic-calculator-ii/) | [Basic Calculator II](solutions/basic-calculator-ii) | Medium | [Python](solutions/basic-calculator-ii/solution.py),  | Algorithms |
 | [230](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [Kth Smallest Element in a BST](solutions/kth-smallest-element-in-a-bst) | Medium | [Python](solutions/kth-smallest-element-in-a-bst/solution.py),  | Algorithms |
