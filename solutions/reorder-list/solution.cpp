@@ -1,3 +1,10 @@
+// function declarations
+void reorderList(ListNode*);
+ListNode* middleOfLinkedList(ListNode*);
+ListNode* reverseLinkedList(ListNode*);
+void weaveLinkedLists(ListNode*, ListNode*);
+
+
 struct ListNode {
     int val;
     ListNode *next;
@@ -6,43 +13,64 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-// splits the list in two in the middle, reverses the back half list, weaves the two lists together
+
+// Splits the list in the middle, reverses the back half list, weaves the front and reversed-back halves together
 void reorderList(ListNode* head) {
-    // find middle of list
-    ListNode *fastIndex = head;
-    ListNode *slowIndex = head;
-    ListNode *previousSlowIndex;
-    
-    while (fastIndex != nullptr && fastIndex->next != nullptr) {
-        fastIndex = fastIndex->next->next;
-        previousSlowIndex = slowIndex;
-        slowIndex = slowIndex->next;
-    }
-    if (slowIndex->next == nullptr) return; // less than 3 nodes in list
+    ListNode *backHalfHead = middleOfLinkedList(head);
+
+    // return if there aren't enough nodes to warrant reordering ( <= 2 nodes)
+    if (backHalfHead->next == nullptr) return;
 
     // cut off the end of the first-half list
-    previousSlowIndex->next = nullptr;
-    previousSlowIndex = nullptr;
+    ListNode *tmp = backHalfHead->next;
+    backHalfHead->next = nullptr;
+    backHalfHead = tmp;
 
-    // reverse back half
-    while (slowIndex != nullptr) {
-        ListNode *nextSlowIndex = slowIndex->next;
-        slowIndex->next = previousSlowIndex;
-        previousSlowIndex = slowIndex;
-        slowIndex = nextSlowIndex;
+    backHalfHead = reverseLinkedList(backHalfHead);
+
+    weaveLinkedLists(head, backHalfHead);
+}
+
+// Returns a pointer to the middle of a linked list
+// for an even number of nodes, returns the first median
+ListNode* middleOfLinkedList(ListNode* head) {
+    ListNode *fastIndex = head;
+    ListNode *slowIndex = head;
+
+    while (fastIndex->next != nullptr && fastIndex->next->next != nullptr) {
+        fastIndex = fastIndex->next->next;
+        slowIndex = slowIndex->next;
     }
+    return slowIndex;
+}
 
-    // build new list
-    ListNode *forwardIndex = head;
-    ListNode *reverseIndex = previousSlowIndex;
-    ListNode *nextForward, *nextReverse;
-    while (forwardIndex != nullptr) {
-        nextForward = forwardIndex->next;
-        nextReverse = reverseIndex->next;
+// Reverses a linked-list and returns the new head
+ListNode* reverseLinkedList(ListNode* head) {
+    ListNode *index = head;
+    ListNode *nextIndex, *previousIndex = nullptr;
 
-        forwardIndex->next = reverseIndex;
-        forwardIndex = nextForward;
-        if (forwardIndex != nullptr) reverseIndex->next = forwardIndex;
-        reverseIndex = nextReverse;
+    while (index != nullptr) {
+        nextIndex = index->next;
+        index->next = previousIndex;
+        previousIndex = index;
+        index = nextIndex;
+    }
+    return previousIndex;
+}
+
+// Merges two linked lists into one list with alternating elements [listA[0], listB[0], listA[1], listB[1], ...]
+// *headA points to the head of the new list
+void weaveLinkedLists(ListNode* headA, ListNode* headB) {
+    ListNode *aIndex = headA;
+    ListNode *bIndex = headB;
+    ListNode *nextAIndex, *nextBIndex;
+    while (aIndex != nullptr && bIndex != nullptr) {
+        nextAIndex = aIndex->next;
+        nextBIndex = bIndex->next;
+
+        aIndex->next = bIndex;
+        bIndex->next = nextAIndex;
+        aIndex = nextAIndex;
+        bIndex = nextBIndex;
     }
 }
