@@ -3,17 +3,12 @@
 #include <cmath> // pow(), log2()
 using namespace std;
 
-vector<int> countBitsManual(int n) { // O(n*logn)
+// Dividing an integer by 2 shifts its bits to the right, so any integer x has the same number of set bits as x/2 
+// plus the least-significant-bit lost in the shift. If x is odd, then the lsb was set to 1.
+vector<int> countBitsManual(int n) { // O(n)
     vector<int> bitCounts {0};
     for (int i = 1; i < n + 1; i++) {
-        int iVal = i;
-        int iBitCount = 0;
-        for (int bit = ceil(log2(i)) + 1; bit >= 0 && iVal != 0; bit--) {
-            if (iVal >= pow(2, bit)) {
-                iVal -= pow(2, bit);
-                iBitCount++;
-            }
-        }
+        int iBitCount = bitCounts[i / 2] + (i % 2);
         bitCounts.push_back(iBitCount);
     }
     return bitCounts;
