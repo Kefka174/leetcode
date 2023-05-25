@@ -14,6 +14,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [39](https://leetcode.com/problems/combination-sum/) | [Combination Sum](solutions/combination-sum) | Medium | [C++](solutions/combination-sum/solution.cpp),  | Algorithms |
 | [43](https://leetcode.com/problems/multiply-strings/) | [Multiply Strings](solutions/multiply-strings) | Medium | [Python](solutions/multiply-strings/solution.py),  | Algorithms |
 | [46](https://leetcode.com/problems/permutations/) | [Permutations](solutions/permutations) | Medium | [C++](solutions/permutations/solution.cpp),  | Algorithms |
+| [49](https://leetcode.com/problems/group-anagrams/) | [Group Anagrams](solutions/group-anagrams) | Medium | [C++](solutions/group-anagrams/solution.cpp),  | Algorithms |
 | [54](https://leetcode.com/problems/spiral-matrix/) | [Spiral Matrix](solutions/spiral-matrix) | Medium | [Python](solutions/spiral-matrix/solution.py),  | Algorithms |
 | [56](https://leetcode.com/problems/merge-intervals/) | [Merge Intervals](solutions/merge-intervals) | Medium | [Python](solutions/merge-intervals/solution.py),  | Algorithms |
 | [57](https://leetcode.com/problems/insert-interval/) | [Insert Interval](solutions/insert-interval) | Medium | [Python](solutions/insert-interval/solution.py),  | Algorithms |
@@ -31,6 +32,9 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [110](https://leetcode.com/problems/balanced-binary-tree/) | [Balanced Binary Tree](solutions/balanced-binary-tree) | Easy | [Python](solutions/balanced-binary-tree/solution.py),  | Algorithms |
 | [111](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [Minimum Depth of Binary Tree](solutions/minimum-depth-of-binary-tree) | Easy | [Python](solutions/minimum-depth-of-binary-tree/solution.py),  | Algorithms |
 | [121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Best Time to Buy and Sell Stock](solutions/best-time-to-buy-and-sell-stock) | Easy | [C++](solutions/best-time-to-buy-and-sell-stock/solution.cpp),  | Algorithms |
+| [124](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | [Binary Tree Maximum Path Sum](solutions/binary-tree-maximum-path-sum) | Hard | [C++](solutions/binary-tree-maximum-path-sum/solution.cpp),  | Algorithms |
+| [139](https://leetcode.com/problems/word-break/) | [Word Break](solutions/word-break) | Medium | [C++](solutions/word-break/solution.cpp),  | Algorithms |
+| [140](https://leetcode.com/problems/word-break-ii/) | [Word Break II](solutions/word-break-ii) | Hard | [C++](solutions/word-break-ii/solution.cpp),  | Algorithms |
 | [142](https://leetcode.com/problems/linked-list-cycle-ii/) | [Linked List Cycle II](solutions/linked-list-cycle-ii) | Medium | [C++](solutions/linked-list-cycle-ii/solution.cpp),  | Algorithms |
 | [143](https://leetcode.com/problems/reorder-list/) | [Reorder List](solutions/reorder-list) | Medium | [C++](solutions/reorder-list/solution.cpp),  | Algorithms |
 | [144](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Binary Tree Preorder Traversal](solutions/binary-tree-preorder-traversal) | Easy | [Python](solutions/binary-tree-preorder-traversal/solution.py),  | Algorithms |
@@ -38,6 +42,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [152](https://leetcode.com/problems/maximum-product-subarray/) | [Maximum Product Subarray](solutions/maximum-product-subarray) | Medium | [Python](solutions/maximum-product-subarray/solution.py),  | Algorithms |
 | [155](https://leetcode.com/problems/min-stack/) | [Min Stack](solutions/min-stack) | Medium | [Python](solutions/min-stack/solution.py),  | Algorithms |
 | [173](https://leetcode.com/problems/binary-search-tree-iterator/) | [Binary Search Tree Iterator](solutions/binary-search-tree-iterator) | Medium | [Python](solutions/binary-search-tree-iterator/solution.py),  | Algorithms |
+| [191](https://leetcode.com/problems/number-of-1-bits/) | [Number of 1 Bits](solutions/number-of-1-bits) | Easy | [C++](solutions/number-of-1-bits/solution.cpp),  | Algorithms |
 | [198](https://leetcode.com/problems/house-robber/) | [House Robber](solutions/house-robber) | Medium | [Python](solutions/house-robber/solution.py),  | Algorithms |
 | [199](https://leetcode.com/problems/binary-tree-right-side-view/) | [Binary Tree Right Side View](solutions/binary-tree-right-side-view) | Medium | [Python](solutions/binary-tree-right-side-view/solution.py),  | Algorithms |
 | [200](https://leetcode.com/problems/number-of-islands/) | [Number of Islands](solutions/number-of-islands) | Medium | [C++](solutions/number-of-islands/solution.cpp),  | Algorithms |
@@ -55,10 +60,14 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [232](https://leetcode.com/problems/implement-queue-using-stacks/) | [Implement Queue using Stacks](solutions/implement-queue-using-stacks) | Easy | [Python](solutions/implement-queue-using-stacks/solution.py),  | Algorithms |
 | [234](https://leetcode.com/problems/palindrome-linked-list/) | [Palindrome Linked List](solutions/palindrome-linked-list) | Easy | [Python](solutions/palindrome-linked-list/solution.py),  | Algorithms |
 | [235](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [Lowest Common Ancestor of a Binary Search Tree](solutions/lowest-common-ancestor-of-a-binary-search-tree) | Medium | [C++](solutions/lowest-common-ancestor-of-a-binary-search-tree/solution.cpp),  | Algorithms |
+| [238](https://leetcode.com/problems/product-of-array-except-self/) | [Product of Array Except Self](solutions/product-of-array-except-self) | Medium | [C++](solutions/product-of-array-except-self/solution.cpp),  | Algorithms |
+| [242](https://leetcode.com/problems/valid-anagram/) | [Valid Anagram](solutions/valid-anagram) | Easy | [C++](solutions/valid-anagram/solution.cpp),  | Algorithms |
 | [278](https://leetcode.com/problems/first-bad-version/) | [First Bad Version](solutions/first-bad-version) | Easy | [C++](solutions/first-bad-version/solution.cpp),  | Algorithms |
 | [299](https://leetcode.com/problems/bulls-and-cows/) | [Bulls and Cows](solutions/bulls-and-cows) | Medium | [Python](solutions/bulls-and-cows/solution.py),  | Algorithms |
+| [300](https://leetcode.com/problems/longest-increasing-subsequence/) | [Longest Increasing Subsequence](solutions/longest-increasing-subsequence) | Medium | [C++](solutions/longest-increasing-subsequence/solution.cpp),  | Algorithms |
 | [322](https://leetcode.com/problems/coin-change/) | [Coin Change](solutions/coin-change) | Medium | [Python](solutions/coin-change/solution.py),  | Algorithms |
 | [328](https://leetcode.com/problems/odd-even-linked-list/) | [Odd Even Linked List](solutions/odd-even-linked-list) | Medium | [Python](solutions/odd-even-linked-list/solution.py),  | Algorithms |
+| [338](https://leetcode.com/problems/counting-bits/) | [Counting Bits](solutions/counting-bits) | Easy | [C++](solutions/counting-bits/solution.cpp),  | Algorithms |
 | [392](https://leetcode.com/problems/is-subsequence/) | [Is Subsequence](solutions/is-subsequence) | Easy | [C++](solutions/is-subsequence/solution.cpp),  | Algorithms |
 | [394](https://leetcode.com/problems/decode-string/) | [Decode String](solutions/decode-string) | Medium | [Python](solutions/decode-string/solution.py),  | Algorithms |
 | [409](https://leetcode.com/problems/longest-palindrome/) | [Longest Palindrome](solutions/longest-palindrome) | Easy | [C++](solutions/longest-palindrome/solution.cpp),  | Algorithms |
