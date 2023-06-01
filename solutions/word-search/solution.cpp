@@ -10,14 +10,52 @@ unordered_set<int> checkNeighbors(int, int, char, vector<vector<char>>&);
 unordered_map<char, int> count2DVector(vector<vector<char>>);
 unordered_map<char, int> countString(string);
 
-// needs refactor
-bool exist(vector<vector<char>>& board, string word) { // O(n * w!) where w is the length of word
+bool existRecursive(vector<vector<char>>& board, string word) {
+    // validate board contains enough valid characters to build word
     unordered_map<char, int> boardCounter = count2DVector(board);
     unordered_map<char, int> wordCounter = countString(word);
     for (auto i = wordCounter.begin(); i != wordCounter.end(); i++) {
         if (boardCounter.count(i->first) == 0 || boardCounter[i->first] < i->second) return false;
     }
 
+    // dfs to find word
+    for (int rowNum = 0; rowNum < board.size(); rowNum++) {
+        for (int colNum = 0; colNum < board[0].size(); colNum++) {
+            if (board[rowNum][colNum] == word[0] && recursiveHelper(rowNum, colNum, 1, word, board)) return true;
+        }
+    }
+    return false;
+}
+
+bool recursiveHelper(int row, int col, int charNeededIndex, string& word, vector<vector<char>>& board) { // dfs
+    if (charNeededIndex == word.length()) return true;
+    char charAtRowCol = board[row][col];
+    board[row][col] = '0';
+
+    for (int neighborDirection : checkNeighbors(row, col, word[charNeededIndex], board)) {
+        int nextRow = row;
+        int nextCol = col;
+        if (neighborDirection == 0) nextCol++;
+        else if (neighborDirection == 1) nextRow++;
+        else if (neighborDirection == 2) nextCol--;
+        else nextRow--;
+        if (recursiveHelper(nextRow, nextCol, charNeededIndex + 1, word, board)) return true;
+    }
+    board[row][col] = charAtRowCol;
+    return false;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+bool exist(vector<vector<char>>& board, string word) { // O(n * w!) where w is the length of word
+    // validate board contains enough valid characters to build word
+    unordered_map<char, int> boardCounter = count2DVector(board);
+    unordered_map<char, int> wordCounter = countString(word);
+    for (auto i = wordCounter.begin(); i != wordCounter.end(); i++) {
+        if (boardCounter.count(i->first) == 0 || boardCounter[i->first] < i->second) return false;
+    }
+
+    // dfs to find word
     stack<pair<pair<int, int>, unordered_set<int>>> alternatePaths; 
     int charNeededIndex = 0;
     for (int rowNum = 0; rowNum < board.size(); rowNum++) {
@@ -100,6 +138,8 @@ unordered_map<char, int> countString(string s) {
     return counts;
 }
 
+
+// testing
 int main() {
     vector<vector<char>> board;
     board.push_back({'A','B','C','E'});
