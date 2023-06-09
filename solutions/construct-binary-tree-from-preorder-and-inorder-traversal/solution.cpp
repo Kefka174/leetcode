@@ -12,6 +12,30 @@ struct TreeNode {
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
+TreeNode* buildTreeRecursive(vector<int>& preorder, vector<int>& inorder) { // O(n)
+    unordered_map<int, int> valInorderIndexes;
+    for (int i = 0; i < inorder.size(); i++) valInorderIndexes[inorder[i]] = i;
+    
+    vector<int>::iterator preorderIterator = preorder.begin();
+    return recursiveHelper(preorderIterator, valInorderIndexes, 0, inorder.size() - 1);
+}
+
+TreeNode* recursiveHelper(vector<int>::iterator& preorderIterator, unordered_map<int, int>& valInorderIndexes, 
+                            int inorderStartIndex, int inorderEndIndex) {
+    TreeNode *head = new TreeNode(*preorderIterator);
+    int headInorderIndex = valInorderIndexes[*preorderIterator];
+    preorderIterator++;
+    if (headInorderIndex > inorderStartIndex) {
+        head->left = recursiveHelper(preorderIterator, valInorderIndexes, inorderStartIndex, headInorderIndex - 1);
+    }
+    if (headInorderIndex < inorderEndIndex) {
+        head->right = recursiveHelper(preorderIterator, valInorderIndexes, headInorderIndex + 1, inorderEndIndex);
+    }
+    return head;
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Creates nodes in the order of the preorder traversal, uses the inorder traversal to find the correct parent of each node
 TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {// O(nlogn)
     unordered_map<int, int> valInorderIndexes;
