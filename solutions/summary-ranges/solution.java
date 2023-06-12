@@ -1,29 +1,17 @@
-import java.util.ArrayList;
 import java.util.List;
+import java.util.ArrayList;
 
 class Solution {
     public List<String> summaryRanges(int[] nums) {
         ArrayList<String> ranges = new ArrayList<>();
-        if (nums.length == 0) return ranges;
-
-        int currentRangeStart = nums[0];
-        int currentRangeEnd = nums[0];
-        for (int i = 1; i < nums.length; i++) {
-            if (nums[i] != currentRangeEnd + 1) {
-                ranges.add(rangeAsString(currentRangeStart, currentRangeEnd));
-                
-                currentRangeStart = nums[i];
-                currentRangeEnd = nums[i];
-            }
-            else currentRangeEnd++;
-        }
-        ranges.add(rangeAsString(currentRangeStart, currentRangeEnd));
         
-        return ranges;
-    }
+        for (int i = 0; i < nums.length; i++) {
+            int rangeStart = nums[i];
+            while (i + 1 < nums.length && nums[i + 1] == nums[i] + 1) i++;
 
-    private String rangeAsString(int rangeStart, int rangeEnd) {
-        if (rangeStart == rangeEnd) return Integer.toString(rangeStart);
-        else return rangeStart + "->" + rangeEnd;
+            if (rangeStart == nums[i]) ranges.add(Integer.toString(nums[i]));
+            else ranges.add(rangeStart + "->" + nums[i]);
+        }
+        return ranges;
     }
 }
