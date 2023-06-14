@@ -1,5 +1,26 @@
 class Solution {
-    public int jump(int[] nums) { // O(n * v) where v is the value at a given index (effectivly O(n^2))
+    public int jumpGreedy(int[] nums) { // O(n)
+        if (nums.length == 1) return 0;
+        int jumpCount = 1;
+        int jumpRangeStart = 1;
+        int jumpRangeEnd = nums[0];
+
+        while (jumpRangeEnd < nums.length - 1) {
+            int furthestJumpFromRange = 0;
+            for (int i = jumpRangeStart; i <= jumpRangeEnd; i++) {
+                if (i + nums[i] > furthestJumpFromRange) furthestJumpFromRange = i + nums[i];
+            }
+
+            jumpRangeStart = jumpRangeEnd + 1;
+            jumpRangeEnd = furthestJumpFromRange;
+            jumpCount++;
+        }
+        return jumpCount;
+    }
+
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    public int jumpDynamic(int[] nums) { // O(n * v) where v is the value at a given index (effectivly O(n^2))
         int[] minJumpsToEnd = new int[nums.length];
         for (int i = nums.length - 2; i >= 0; i--) {
             int minJumpsFromI = -1; // -1 means it doesn't lead to the end;
