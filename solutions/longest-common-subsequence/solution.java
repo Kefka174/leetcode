@@ -3,23 +3,32 @@ import javafx.util.Pair;
 
 class Solution {
     public int longestCommonSubsequenceIterative(String text1, String text2) {
-        int[][] memo = new int[text1.length() + 1][text2.length() + 1];
+        if (text2.length() > text1.length()) { // swaps so text2 is shorter
+            String temp = text1;
+            text1 = text2;
+            text2 = temp;
+        }
+
+        int[] currentRow = new int[text2.length() + 1];
 
         for (int i = 1; i <= text1.length(); i++) {
+            int prevRow = 0, prevRowCol = 0;
             for (int j = 1; j <= text2.length(); j++) {
+                prevRowCol = prevRow;
+                prevRow = currentRow[j];
                 if (text1.charAt(i - 1) == text2.charAt(j - 1))
-                    memo[i][j] = 1 + memo[i - 1][j - 1];
+                    currentRow[j] = 1 + prevRowCol;
                 else 
-                    memo[i][j] = Math.max(memo[i - 1][j], memo[i][j - 1]);
+                    currentRow[j] = Math.max(prevRow, currentRow[j - 1]);
             }
         }
 
-        return memo[text1.length()][text2.length()];
+        return currentRow[text2.length()];
     }
 
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    public int longestCommonSubsequence(String text1, String text2) {
+    public int longestCommonSubsequenceRecursive(String text1, String text2) {
         Map<Pair<Integer, Integer>, Integer> memo = new HashMap<>();
         return recursiveHelper(text1, text2, 0, 0, memo);
     }
