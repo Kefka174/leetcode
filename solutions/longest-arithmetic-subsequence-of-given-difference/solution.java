@@ -4,18 +4,13 @@ import java.util.Map;
 class Solution {
     public int longestSubsequence(int[] arr, int difference) {
         Map<Integer, Integer> expectedValues = new HashMap<>();
+        int longestLength = 1;
         for (int num : arr) {
-            int lengthUsingNum = 1;
-            if (expectedValues.containsKey(num)) {
-                lengthUsingNum = expectedValues.get(num) + 1;
-                expectedValues.remove(num);
-            }
-
-            if (!expectedValues.containsKey(num + difference) ||
-                expectedValues.get(num + difference) < lengthUsingNum)
-                expectedValues.put(num + difference, lengthUsingNum);
+            int lengthUsingNum = expectedValues.getOrDefault(num, 0) + 1;
+            expectedValues.put(num + difference, lengthUsingNum);
+            if (lengthUsingNum > longestLength) longestLength = lengthUsingNum;
         }
 
-        return Collections.max(expectedValues.values());
+        return longestLength;
     }
 }
