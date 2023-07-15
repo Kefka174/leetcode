@@ -7,6 +7,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [1](https://leetcode.com/problems/two-sum/) | [Two Sum](solutions/two-sum) | Easy | [Python](solutions/two-sum/solution.py),  | Algorithms |
 | [2](https://leetcode.com/problems/add-two-numbers/) | [Add Two Numbers](solutions/add-two-numbers) | Medium | [Java](solutions/add-two-numbers/solution.java),  | Algorithms |
 | [3](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Longest Substring Without Repeating Characters](solutions/longest-substring-without-repeating-characters) | Medium | [Python](solutions/longest-substring-without-repeating-characters/solution.py),  | Algorithms |
+| [5](https://leetcode.com/problems/longest-palindromic-substring/) | [Longest Palindromic Substring](solutions/longest-palindromic-substring) | Medium | [Java](solutions/longest-palindromic-substring/solution.java),  | Algorithms |
 | [14](https://leetcode.com/problems/longest-common-prefix/) | [Longest Common Prefix](solutions/longest-common-prefix) | Easy | [Python](solutions/longest-common-prefix/solution.py),  | Algorithms |
 | [15](https://leetcode.com/problems/3sum/) | [3Sum](solutions/3sum) | Medium | [C++](solutions/3sum/solution.cpp),  | Algorithms |
 | [16](https://leetcode.com/problems/3sum-closest/) | [3Sum Closest](solutions/3sum-closest) | Medium | [Python](solutions/3sum-closest/solution.py),  | Algorithms |
@@ -28,6 +29,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [62](https://leetcode.com/problems/unique-paths/) | [Unique Paths](solutions/unique-paths) | Medium | [C++](solutions/unique-paths/solution.cpp), [Java](solutions/unique-paths/solution.java),  | Algorithms |
 | [63](https://leetcode.com/problems/unique-paths-ii/) | [Unique Paths II](solutions/unique-paths-ii) | Medium | [Java](solutions/unique-paths-ii/solution.java),  | Algorithms |
 | [70](https://leetcode.com/problems/climbing-stairs/) | [Climbing Stairs](solutions/climbing-stairs) | Easy | [C++](solutions/climbing-stairs/solution.cpp),  | Algorithms |
+| [73](https://leetcode.com/problems/set-matrix-zeroes/) | [Set Matrix Zeroes](solutions/set-matrix-zeroes) | Medium | [Java](solutions/set-matrix-zeroes/solution.java),  | Algorithms |
 | [74](https://leetcode.com/problems/search-a-2d-matrix/) | [Search a 2D Matrix](solutions/search-a-2d-matrix) | Medium | [Python](solutions/search-a-2d-matrix/solution.py),  | Algorithms |
 | [76](https://leetcode.com/problems/minimum-window-substring/) | [Minimum Window Substring](solutions/minimum-window-substring) | Hard | [Python](solutions/minimum-window-substring/solution.py),  | Algorithms |
 | [79](https://leetcode.com/problems/word-search/) | [Word Search](solutions/word-search) | Medium | [C++](solutions/word-search/solution.cpp),  | Algorithms |
@@ -46,6 +48,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [111](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [Minimum Depth of Binary Tree](solutions/minimum-depth-of-binary-tree) | Easy | [Python](solutions/minimum-depth-of-binary-tree/solution.py),  | Algorithms |
 | [121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Best Time to Buy and Sell Stock](solutions/best-time-to-buy-and-sell-stock) | Easy | [C++](solutions/best-time-to-buy-and-sell-stock/solution.cpp),  | Algorithms |
 | [124](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | [Binary Tree Maximum Path Sum](solutions/binary-tree-maximum-path-sum) | Hard | [C++](solutions/binary-tree-maximum-path-sum/solution.cpp),  | Algorithms |
+| [125](https://leetcode.com/problems/valid-palindrome/) | [Valid Palindrome](solutions/valid-palindrome) | Easy | [Java](solutions/valid-palindrome/solution.java),  | Algorithms |
 | [133](https://leetcode.com/problems/clone-graph/) | [Clone Graph](solutions/clone-graph) | Medium | [C++](solutions/clone-graph/solution.cpp),  | Algorithms |
 | [139](https://leetcode.com/problems/word-break/) | [Word Break](solutions/word-break) | Medium | [C++](solutions/word-break/solution.cpp),  | Algorithms |
 | [140](https://leetcode.com/problems/word-break-ii/) | [Word Break II](solutions/word-break-ii) | Hard | [C++](solutions/word-break-ii/solution.cpp),  | Algorithms |
@@ -56,6 +59,7 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [148](https://leetcode.com/problems/sort-list/) | [Sort List](solutions/sort-list) | Medium | [Python](solutions/sort-list/solution.py),  | Algorithms |
 | [152](https://leetcode.com/problems/maximum-product-subarray/) | [Maximum Product Subarray](solutions/maximum-product-subarray) | Medium | [Python](solutions/maximum-product-subarray/solution.py),  | Algorithms |
 | [155](https://leetcode.com/problems/min-stack/) | [Min Stack](solutions/min-stack) | Medium | [Python](solutions/min-stack/solution.py),  | Algorithms |
+| [169](https://leetcode.com/problems/majority-element/) | [Majority Element](solutions/majority-element) | Easy | [Java](solutions/majority-element/solution.java),  | Algorithms |
 | [173](https://leetcode.com/problems/binary-search-tree-iterator/) | [Binary Search Tree Iterator](solutions/binary-search-tree-iterator) | Medium | [Python](solutions/binary-search-tree-iterator/solution.py),  | Algorithms |
 | [190](https://leetcode.com/problems/reverse-bits/) | [Reverse Bits](solutions/reverse-bits) | Easy | [C++](solutions/reverse-bits/solution.cpp),  | Algorithms |
 | [191](https://leetcode.com/problems/number-of-1-bits/) | [Number of 1 Bits](solutions/number-of-1-bits) | Easy | [C++](solutions/number-of-1-bits/solution.cpp),  | Algorithms |
@@ -65,8 +69,10 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [202](https://leetcode.com/problems/happy-number/) | [Happy Number](solutions/happy-number) | Easy | [Python](solutions/happy-number/solution.py),  | Algorithms |
 | [205](https://leetcode.com/problems/isomorphic-strings/) | [Isomorphic Strings](solutions/isomorphic-strings) | Easy | [C++](solutions/isomorphic-strings/solution.cpp),  | Algorithms |
 | [206](https://leetcode.com/problems/reverse-linked-list/) | [Reverse Linked List](solutions/reverse-linked-list) | Easy | [C++](solutions/reverse-linked-list/solution.cpp),  | Algorithms |
-| [208](https://leetcode.com/problems/implement-trie-prefix-tree/) | [Implement Trie (Prefix Tree)](solutions/implement-trie-prefix-tree) | Medium | [Python](solutions/implement-trie-prefix-tree/solution.py),  | Algorithms |
+| [207](https://leetcode.com/problems/course-schedule/) | [Course Schedule](solutions/course-schedule) | Medium | [Java](solutions/course-schedule/solution.java),  | Algorithms |
+| [208](https://leetcode.com/problems/implement-trie-prefix-tree/) | [Implement Trie (Prefix Tree)](solutions/implement-trie-prefix-tree) | Medium | [Java](solutions/implement-trie-prefix-tree/solution.java), [Python](solutions/implement-trie-prefix-tree/solution.py),  | Algorithms |
 | [210](https://leetcode.com/problems/course-schedule-ii/) | [Course Schedule II](solutions/course-schedule-ii) | Medium | [Python](solutions/course-schedule-ii/solution.py),  | Algorithms |
+| [211](https://leetcode.com/problems/design-add-and-search-words-data-structure/) | [Design Add and Search Words Data Structure](solutions/design-add-and-search-words-data-structure) | Medium | [Java](solutions/design-add-and-search-words-data-structure/solution.java),  | Algorithms |
 | [217](https://leetcode.com/problems/contains-duplicate/) | [Contains Duplicate](solutions/contains-duplicate) | Easy | [C++](solutions/contains-duplicate/solution.cpp),  | Algorithms |
 | [219](https://leetcode.com/problems/contains-duplicate-ii/) | [Contains Duplicate II](solutions/contains-duplicate-ii) | Easy | [C++](solutions/contains-duplicate-ii/solution.cpp),  | Algorithms |
 | [220](https://leetcode.com/problems/contains-duplicate-iii/) | [Contains Duplicate III](solutions/contains-duplicate-iii) | Hard | [C++](solutions/contains-duplicate-iii/solution.cpp),  | Algorithms |
@@ -80,12 +86,14 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [238](https://leetcode.com/problems/product-of-array-except-self/) | [Product of Array Except Self](solutions/product-of-array-except-self) | Medium | [C++](solutions/product-of-array-except-self/solution.cpp),  | Algorithms |
 | [242](https://leetcode.com/problems/valid-anagram/) | [Valid Anagram](solutions/valid-anagram) | Easy | [C++](solutions/valid-anagram/solution.cpp),  | Algorithms |
 | [278](https://leetcode.com/problems/first-bad-version/) | [First Bad Version](solutions/first-bad-version) | Easy | [C++](solutions/first-bad-version/solution.cpp),  | Algorithms |
+| [283](https://leetcode.com/problems/move-zeroes/) | [Move Zeroes](solutions/move-zeroes) | Easy | [Java](solutions/move-zeroes/solution.java),  | Algorithms |
 | [299](https://leetcode.com/problems/bulls-and-cows/) | [Bulls and Cows](solutions/bulls-and-cows) | Medium | [Python](solutions/bulls-and-cows/solution.py),  | Algorithms |
 | [300](https://leetcode.com/problems/longest-increasing-subsequence/) | [Longest Increasing Subsequence](solutions/longest-increasing-subsequence) | Medium | [C++](solutions/longest-increasing-subsequence/solution.cpp),  | Algorithms |
 | [322](https://leetcode.com/problems/coin-change/) | [Coin Change](solutions/coin-change) | Medium | [Python](solutions/coin-change/solution.py),  | Algorithms |
 | [328](https://leetcode.com/problems/odd-even-linked-list/) | [Odd Even Linked List](solutions/odd-even-linked-list) | Medium | [Python](solutions/odd-even-linked-list/solution.py),  | Algorithms |
 | [338](https://leetcode.com/problems/counting-bits/) | [Counting Bits](solutions/counting-bits) | Easy | [C++](solutions/counting-bits/solution.cpp),  | Algorithms |
 | [347](https://leetcode.com/problems/top-k-frequent-elements/) | [Top K Frequent Elements](solutions/top-k-frequent-elements) | Medium | [Java](solutions/top-k-frequent-elements/solution.java),  | Algorithms |
+| [371](https://leetcode.com/problems/sum-of-two-integers/) | [Sum of Two Integers](solutions/sum-of-two-integers) | Medium | [Java](solutions/sum-of-two-integers/solution.java),  | Algorithms |
 | [392](https://leetcode.com/problems/is-subsequence/) | [Is Subsequence](solutions/is-subsequence) | Easy | [C++](solutions/is-subsequence/solution.cpp),  | Algorithms |
 | [394](https://leetcode.com/problems/decode-string/) | [Decode String](solutions/decode-string) | Medium | [Python](solutions/decode-string/solution.py),  | Algorithms |
 | [409](https://leetcode.com/problems/longest-palindrome/) | [Longest Palindrome](solutions/longest-palindrome) | Easy | [C++](solutions/longest-palindrome/solution.cpp),  | Algorithms |
@@ -98,6 +106,8 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [543](https://leetcode.com/problems/diameter-of-binary-tree/) | [Diameter of Binary Tree](solutions/diameter-of-binary-tree) | Easy | [Python](solutions/diameter-of-binary-tree/solution.py),  | Algorithms |
 | [547](https://leetcode.com/problems/number-of-provinces/) | [Number of Provinces](solutions/number-of-provinces) | Medium | [C++](solutions/number-of-provinces/solution.cpp),  | Algorithms |
 | [621](https://leetcode.com/problems/task-scheduler/) | [Task Scheduler](solutions/task-scheduler) | Medium | [Python](solutions/task-scheduler/solution.py),  | Algorithms |
+| [639](https://leetcode.com/problems/decode-ways-ii/) | [Decode Ways II](solutions/decode-ways-ii) | Hard | [Java](solutions/decode-ways-ii/solution.java),  | Algorithms |
+| [680](https://leetcode.com/problems/valid-palindrome-ii/) | [Valid Palindrome II](solutions/valid-palindrome-ii) | Easy | [Java](solutions/valid-palindrome-ii/solution.java),  | Algorithms |
 | [692](https://leetcode.com/problems/top-k-frequent-words/) | [Top K Frequent Words](solutions/top-k-frequent-words) | Medium | [Python](solutions/top-k-frequent-words/solution.py),  | Algorithms |
 | [714](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | [Best Time to Buy and Sell Stock with Transaction Fee](solutions/best-time-to-buy-and-sell-stock-with-transaction-fee) | Medium | [Java](solutions/best-time-to-buy-and-sell-stock-with-transaction-fee/solution.java),  | Algorithms |
 | [724](https://leetcode.com/problems/find-pivot-index/) | [Find Pivot Index](solutions/find-pivot-index) | Easy | [C++](solutions/find-pivot-index/solution.cpp),  | Algorithms |
@@ -109,19 +119,24 @@ As solutions to LeetCode challenges are added to the solutions folder, Github Ac
 | [792](https://leetcode.com/problems/binary-search/) | [Binary Search](solutions/binary-search) | Easy | [C++](solutions/binary-search/solution.cpp),  | Algorithms |
 | [833](https://leetcode.com/problems/bus-routes/) | [Bus Routes](solutions/bus-routes) | Hard | [Python](solutions/bus-routes/solution.py),  | Algorithms |
 | [874](https://leetcode.com/problems/backspace-string-compare/) | [Backspace String Compare](solutions/backspace-string-compare) | Easy | [Python](solutions/backspace-string-compare/solution.py),  | Algorithms |
+| [889](https://leetcode.com/problems/buddy-strings/) | [Buddy Strings](solutions/buddy-strings) | Easy | [Java](solutions/buddy-strings/solution.java),  | Algorithms |
 | [908](https://leetcode.com/problems/middle-of-the-linked-list/) | [Middle of the Linked List](solutions/middle-of-the-linked-list) | Easy | [C++](solutions/middle-of-the-linked-list/solution.cpp),  | Algorithms |
 | [984](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/) | [Most Stones Removed with Same Row or Column](solutions/most-stones-removed-with-same-row-or-column) | Medium | [C++](solutions/most-stones-removed-with-same-row-or-column/solution.cpp),  | Algorithms |
 | [1013](https://leetcode.com/problems/fibonacci-number/) | [Fibonacci Number](solutions/fibonacci-number) | Easy | [C++](solutions/fibonacci-number/solution.cpp),  | Algorithms |
+| [1035](https://leetcode.com/problems/cousins-in-binary-tree/) | [Cousins in Binary Tree](solutions/cousins-in-binary-tree) | Easy | [Java](solutions/cousins-in-binary-tree/solution.java),  | Algorithms |
 | [1036](https://leetcode.com/problems/rotting-oranges/) | [Rotting Oranges](solutions/rotting-oranges) | Medium | [Python](solutions/rotting-oranges/solution.py),  | Algorithms |
 | [1087](https://leetcode.com/problems/longest-arithmetic-subsequence/) | [Longest Arithmetic Subsequence](solutions/longest-arithmetic-subsequence) | Medium | [Java](solutions/longest-arithmetic-subsequence/solution.java),  | Algorithms |
 | [1116](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/) | [Maximum Level Sum of a Binary Tree](solutions/maximum-level-sum-of-a-binary-tree) | Medium | [Java](solutions/maximum-level-sum-of-a-binary-tree/solution.java),  | Algorithms |
 | [1127](https://leetcode.com/problems/last-stone-weight/) | [Last Stone Weight](solutions/last-stone-weight) | Easy | [Python](solutions/last-stone-weight/solution.py),  | Algorithms |
 | [1249](https://leetcode.com/problems/snapshot-array/) | [Snapshot Array](solutions/snapshot-array) | Medium | [Java](solutions/snapshot-array/solution.java),  | Algorithms |
+| [1250](https://leetcode.com/problems/longest-common-subsequence/) | [Longest Common Subsequence](solutions/longest-common-subsequence) | Medium | [Java](solutions/longest-common-subsequence/solution.java),  | Algorithms |
 | [1290](https://leetcode.com/problems/make-array-strictly-increasing/) | [Make Array Strictly Increasing](solutions/make-array-strictly-increasing) | Hard | [Java](solutions/make-array-strictly-increasing/solution.java),  | Algorithms |
 | [1324](https://leetcode.com/problems/where-will-the-ball-fall/) | [Where Will the Ball Fall](solutions/where-will-the-ball-fall) | Medium | [Python](solutions/where-will-the-ball-fall/solution.py),  | Algorithms |
+| [1330](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/) | [Longest Arithmetic Subsequence of Given Difference](solutions/longest-arithmetic-subsequence-of-given-difference) | Medium | [Java](solutions/longest-arithmetic-subsequence-of-given-difference/solution.java),  | Algorithms |
 | [1428](https://leetcode.com/problems/jump-game-iii/) | [Jump Game III](solutions/jump-game-iii) | Medium | [Java](solutions/jump-game-iii/solution.java),  | Algorithms |
 | [1447](https://leetcode.com/problems/jump-game-iv/) | [Jump Game IV](solutions/jump-game-iv) | Hard | [Java](solutions/jump-game-iv/solution.java),  | Algorithms |
 | [1476](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/) | [Count Negative Numbers in a Sorted Matrix](solutions/count-negative-numbers-in-a-sorted-matrix) | Easy | [C++](solutions/count-negative-numbers-in-a-sorted-matrix/solution.cpp), [Java](solutions/count-negative-numbers-in-a-sorted-matrix/solution.java),  | Algorithms |
+| [1586](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) | [Longest Subarray of 1's After Deleting One Element](solutions/longest-subarray-of-1s-after-deleting-one-element) | Medium | [Java](solutions/longest-subarray-of-1s-after-deleting-one-element/solution.java),  | Algorithms |
 | [1603](https://leetcode.com/problems/running-sum-of-1d-array/) | [Running Sum of 1d Array](solutions/running-sum-of-1d-array) | Easy | [C++](solutions/running-sum-of-1d-array/solution.cpp),  | Algorithms |
 | [1626](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/) | [Can Make Arithmetic Progression From Sequence](solutions/can-make-arithmetic-progression-from-sequence) | Easy | [C++](solutions/can-make-arithmetic-progression-from-sequence/solution.cpp),  | Algorithms |
 | [1770](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/) | [Minimum Deletions to Make Character Frequencies Unique](solutions/minimum-deletions-to-make-character-frequencies-unique) | Medium | [Java](solutions/minimum-deletions-to-make-character-frequencies-unique/solution.java),  | Algorithms |
