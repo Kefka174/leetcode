@@ -1,4 +1,20 @@
+import java.util.Arrays;
+import java.util.Collections;
+
 class Solution {
+    public void rotateFlipTranspose(int[][] matrix) {
+        Collections.reverse(Arrays.asList(matrix));
+        for (int i = 0; i < matrix.length - 1; i++) {
+            for (int j = i + 1; j < matrix[0].length; j++) {
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i] = temp;
+            }
+        }
+    }
+
+
+    //////////////////////////////////////////////////////////////////////////////////////////
     public void rotate(int[][] matrix) {
         for (int i = 0; i < matrix.length / 2; i++) rotateLayer(matrix, i);
     }
