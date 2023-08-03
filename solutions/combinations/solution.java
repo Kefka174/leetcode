@@ -3,23 +3,17 @@ import java.util.List;
 
 class Solution {
     public List<List<Integer>> combine(int n, int k) {
-        return recursiveCombine(1, n, k);
-    }
-
-    private List<List<Integer>> recursiveCombine(int start, int end, int r) {
         List<List<Integer>> combs = new ArrayList<>();
-        if (r == 1) {
-            List<Integer> singleDigits = new ArrayList<>();
-            for (int i = start; i < end + 1; i++) combs.add(Arrays.asList(i));
+        if (k == 1) {
+            for (int i = n; i > 0; i--) 
+                combs.add(new ArrayList<>(Arrays.asList(i)));
         }
         else {
-            for (int i = start; i <= end + 1 - r; i++) {
-                List<List<Integer>> combsWithoutI = recursiveCombine(i + 1, end, r - 1);
-                for (List<Integer> list : combsWithoutI) {
-                    List<Integer> l = new ArrayList<>(list);
-                    l.add(0, i);
-                    combs.add(l);
-                }
+            for (int i = n; i >= 1; i--) {
+                List<List<Integer>> combsWithoutI = combine(i - 1, k - 1);
+                int appendingElement = i;
+                combsWithoutI.forEach(list -> list.add(appendingElement));
+                combs.addAll(combsWithoutI);
             }
         }
         return combs;
