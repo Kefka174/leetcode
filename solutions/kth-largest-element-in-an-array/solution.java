@@ -1,11 +1,13 @@
 import java.util.PriorityQueue;
 
 class Solution {
-    public int findKthLargest(int[] nums, int k) { // O(n + k*logn)
-        PriorityQueue<Integer> heap = new PriorityQueue<>(nums.length);
-        for (int num : nums) heap.add(-num);
+    public int findKthLargest(int[] nums, int k) { // O(n * logk)
+        PriorityQueue<Integer> heap = new PriorityQueue<>(k + 1);
+        for (int num : nums) {
+            heap.add(num);
+            if (heap.size() > k) heap.poll();
+        }
 
-        for (int i = 0; i < k - 1; i++) heap.remove();
-        return -heap.remove();
+        return heap.poll();
     }
 }
