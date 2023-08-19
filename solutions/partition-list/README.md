@@ -1,0 +1,27 @@
+# Partition List
+
+Given the <code>head</code> of a linked list and a value <code>x</code>, partition it such that all nodes **less than** <code>x</code> come before nodes **greater than or equal** to <code>x</code>.
+
+You should **preserve** the original relative order of the nodes in each of the two partitions.
+
+
+**Example 1:**
+>
+> **Input:** head = [1,4,3,2,5,2], x = 3
+>
+> **Output:** [1,2,2,4,3,5]
+
+**Example 2:**
+>
+> **Input:** head = [2,1], x = 2
+>
+> **Output:** [1,2]
+
+
+**Constraints:**
+
+- The number of nodes in the list is in the range <code>[0, 200]</code>.
+
+- <code>-100 &lt;= Node.val &lt;= 100</code>
+
+- <code>-200 &lt;= x &lt;= 200</code>
