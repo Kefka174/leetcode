@@ -7,7 +7,7 @@ int search(vector<int>& nums, int target) {
     int bottomIndex = 0;
 
     while (bottomIndex <= topIndex) {
-        int middleIndex = ((topIndex - bottomIndex) / 2) + bottomIndex;
+        int middleIndex = (topIndex + bottomIndex) / 2;
         
         if (target == nums[middleIndex]) return middleIndex;
         if (target > nums[middleIndex]) bottomIndex = middleIndex + 1;
@@ -15,10 +15,4 @@ int search(vector<int>& nums, int target) {
     }
     
     return -1;
-}
-
-int main() {
-    vector<int> v1 = {-1, 0, 3, 5, 9, 12};
-    cout << "found at: " << search(v1, 9) << endl;
-    cout << "found at: " << search(v1, 2) << endl;
 }
