@@ -1,7 +1,20 @@
 import java.util.Deque;
 
 class Solution {
-    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+    public TreeNode lowestCommonAncestorRecursive(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == p || root == q || root == null) return root;
+
+        TreeNode nodeInLeft = lowestCommonAncestorRecursive(root.left, p, q);
+        TreeNode nodeInRight = lowestCommonAncestorRecursive(root.right, p, q);
+        
+        if (nodeInLeft != null && nodeInRight != null) return root;
+        if (nodeInLeft != null) return nodeInLeft;
+        return nodeInRight;
+    }
+
+
+    ////////////////////////////////////////////////////////////////////////////////
+    public TreeNode lowestCommonAncestorIterative(TreeNode root, TreeNode p, TreeNode q) {
         Deque<TreeNode> nodeStack = new ArrayDeque<>();
         digLeft(root, nodeStack);
         Deque<TreeNode> ancestorStack = null;
