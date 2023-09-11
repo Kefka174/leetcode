@@ -1,6 +1,31 @@
 import java.util.Deque;
 
 class Solution {
+    // Modifies the original list, reversing the first half
+    public int pairSumModifyList(ListNode head) { // O(n) time O(1) space
+        ListNode fastIndex = head, slowIndex = head;
+        ListNode prevSlowIndex = null;
+        while (fastIndex != null && fastIndex.next != null) {
+            fastIndex = fastIndex.next.next;
+            
+            ListNode nextSlowIndex = slowIndex.next;
+            slowIndex.next = prevSlowIndex;
+            prevSlowIndex = slowIndex;
+            slowIndex = nextSlowIndex;
+        }
+
+        int maxSum = Integer.MIN_VALUE;
+        while (slowIndex != null) {
+            int sum = slowIndex.val + prevSlowIndex.val;
+            if (sum > maxSum) maxSum = sum;
+            slowIndex = slowIndex.next;
+            prevSlowIndex = prevSlowIndex.next;
+        }
+        return maxSum;
+    }
+
+
+    /////////////////////////////////////////////////////////////////
     public int pairSumStack(ListNode head) { // O(n) time and space
         Deque<Integer> valueStack = new ArrayDeque<>();
         ListNode fastIndex = head, slowIndex = head;
