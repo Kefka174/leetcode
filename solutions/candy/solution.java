@@ -1,42 +1,29 @@
 class Solution {
     public int candy(int[] ratings) {
-        int filledIndex = 0, peakIndex = 0, valleyIndex = 0;
+        int startIndex = 0, peakIndex = 0, valleyIndex = 0;
         int candyGiven = ratings.length;
         while (valleyIndex < ratings.length - 1) {
-            peakIndex = nextPeakIndex(ratings, filledIndex);
-            valleyIndex = nextValleyIndex(ratings, peakIndex);
+            peakIndex = nextIndexWithComparator(ratings, startIndex, -1);
+            valleyIndex = nextIndexWithComparator(ratings, peakIndex, 1);
             
-            int peakLength = peakIndex - filledIndex;
+            int peakLength = peakIndex - startIndex;
             int valleyLength = valleyIndex - peakIndex;
             if (peakLength < valleyLength) peakLength--;
             else valleyLength--;
-            
-            candyGiven += summed(peakLength);
-            candyGiven += summed(valleyLength);
+            candyGiven += sumOfSequenceLength(peakLength);
+            candyGiven += sumOfSequenceLength(valleyLength);
 
-            filledIndex = endOfPlateau(ratings, valleyIndex);
+            startIndex = nextIndexWithComparator(ratings, valleyIndex, 0);
         }
         return candyGiven;
     }
 
-    private int summed(int length) {
+    private int sumOfSequenceLength(int length) {
         return length * (length + 1) / 2;
     }
 
-    private int nextPeakIndex(int[] arr, int index) {
-        while (index + 1 < arr.length && arr[index] < arr[index + 1])
-            index++;
-        return index;
-    }
-
-    private int nextValleyIndex(int[] arr, int index) {
-        while (index + 1 < arr.length && arr[index] > arr[index + 1])
-            index++;
-        return index;
-    }
-
-    private int endOfPlateau(int[] arr, int index) {
-        while (index + 1 < arr.length && arr[index] == arr[index + 1]) 
+    private int nextIndexWithComparator(int[] arr, int index, int comparatorValue) {
+        while (index + 1 < arr.length && Integer.compare(arr[index], arr[index + 1]) == comparatorValue)
             index++;
         return index;
     }
