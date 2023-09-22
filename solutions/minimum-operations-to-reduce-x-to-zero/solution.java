@@ -2,6 +2,31 @@ import java.util.Map;
 import javafx.util.Pair;
 
 class Solution {
+    // Finds the longest consecutive subArray that leaves the sum of the rest of nums equal to x
+    public int minOperationsMaxSubArray(int[] nums, int x) {
+        int numsSum = 0;
+        for (int num : nums) numsSum += num;
+
+        int currentTotal = 0, currentLength = 0, maxLength = -1;
+        for (int i = 0; i < nums.length; i++) {
+            currentLength++;
+            currentTotal += nums[i];
+
+            while (currentTotal > numsSum - x && currentLength > 0) {
+                currentLength--;
+                currentTotal -= nums[i - currentLength];
+            }
+
+            if (currentTotal == numsSum - x && currentLength > maxLength)
+                maxLength = currentLength;
+        }
+
+        if (maxLength == -1) return -1;
+        return nums.length - maxLength;
+    }
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////
     public int minOperationsBrute(int[] nums, int x) { // Dynamic with memoization
         Map<Pair<Integer, Pair<Integer, Integer>>, Integer> memo = new HashMap<>();
         return recursiveHelper(nums, x, 0, nums.length - 1, memo);
