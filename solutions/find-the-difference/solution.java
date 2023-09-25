@@ -1,7 +1,20 @@
 import java.util.Map;
 
 class Solution {
-    public char findTheDifference(String s, String t) {
+    public char findTheDifferenceCharValue(String s, String t) {
+        return (char)(charValueTotal(t) - charValueTotal(s));
+    }
+
+    private int charValueTotal(String s) {
+        int total = 0;
+        for (int i = 0; i < s.length(); i++) 
+            total += s.charAt(i);
+        return total;
+    }
+
+
+    /////////////////////////////////////////////////////////////////////////////////////
+    public char findTheDifferenceFrequencies(String s, String t) {
         Map<Character, Integer> sFrequencies = makeFrequencyMap(s);
         Map<Character, Integer> tFrequencies = makeFrequencyMap(t);
         for (char c : tFrequencies.keySet()) {
