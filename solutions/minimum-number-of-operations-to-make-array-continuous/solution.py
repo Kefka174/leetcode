@@ -1,26 +1,24 @@
 from typing import List
 
 class Solution:
-    def minOperations(self, nums: List[int]) -> int: # O(maxNum - minNum)
-        minNum, maxNum = min(nums), max(nums)
-        numSet = set(nums)
+    def minOperations(self, nums: List[int]) -> int: # O(nlogn)
+        sortedUniqueNums = sorted(set(nums))
+        startIndex, endIndex = 0, 0
 
-        windowCount = 0
-        for i in range(minNum, minNum + len(nums)):
-            if i in numSet:
-                windowCount += 1
+        while (endIndex < len(sortedUniqueNums) and 
+               sortedUniqueNums[endIndex] <= sortedUniqueNums[0] + (len(nums) - 1)):
+            endIndex += 1
 
-        if windowCount == len(nums):
-            return 0
+        if endIndex == len(sortedUniqueNums):
+            return len(nums) - len(sortedUniqueNums)
         
-        maxWindowCount = windowCount
-        for i in range(minNum + len(nums), maxNum + 1):
-            if i - len(nums) in numSet:
-                windowCount -= 1
-            if i in numSet:
-                windowCount += 1
-
-            if windowCount > maxWindowCount:
-                maxWindowCount = windowCount
+        maxWindowCount = endIndex
+        while endIndex < len(sortedUniqueNums) - 1:
+            endIndex += 1
+            while sortedUniqueNums[startIndex] < sortedUniqueNums[endIndex] - (len(nums) - 1):
+                startIndex += 1
+            
+            if (endIndex - startIndex) + 1 > maxWindowCount:
+                maxWindowCount = (endIndex - startIndex) + 1
 
         return len(nums) - maxWindowCount
