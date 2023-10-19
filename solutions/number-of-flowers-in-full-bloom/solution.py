@@ -1,10 +1,23 @@
 from typing import List
 from heapq import heappush, heappop
+from bisect import bisect_left
 
 class Solution:
-    def fullBloomFlowers(self, flowers: List[List[int]], people: List[int]) -> List[int]:
+    def fullBloomFlowersBinarySearch(self, flowers: List[List[int]], people: List[int]) -> List[int]:
+        bloomStarts = sorted([flower[0] for flower in flowers])
+        bloomEnds = sorted([flower[1] for flower in flowers])
+        
+        flowersInBloom = []
+        for time in people:
+            flowersInBloom.append(bisect_left(bloomStarts, time + 1) - bisect_left(bloomEnds, time))
+        return flowersInBloom
+
+
+    ##########################################################################################
+    def fullBloomFlowersHeap(self, flowers: List[List[int]], people: List[int]) -> List[int]:
         sortedPeople = sorted(zip(people, range(len(people))))
         sortedFlowers = sorted(flowers)
+        
         flowerIndex = 0
         bloomEndMinHeap = []
         flowersInBloom = [None] * len(people)
