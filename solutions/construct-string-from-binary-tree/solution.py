@@ -21,6 +21,18 @@ class Solution:
 
         string.append(')' * nodesSinceRightChild)
         return "".join(string)
+    
+
+    ###########################################################################
+    def tree2strRecursive(self, root: Optional["TreeNode"]) -> str:
+        if not root: return ""
+
+        string = [str(root.val)]
+        if root.left or root.right:
+            string.append('(' + self.tree2strRecursive(root.left) + ')')
+        if root.right:
+            string.append(('(' + self.tree2strRecursive(root.right) + ')'))
+        return "".join(string)
 
 
 class TreeNode:
