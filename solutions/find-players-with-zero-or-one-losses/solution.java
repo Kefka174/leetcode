@@ -1,31 +1,22 @@
 import java.util.List;
-import java.util.Set;
+import java.util.Map;
 
 class Solution {
     public List<List<Integer>> findWinners(int[][] matches) {
-        Set<Integer> multLosers = new HashSet<>(),
-                     singleLosers = new HashSet<>(),
-                     undefeated = new HashSet<>();
+        Map<Integer, Integer> playerLosses = new TreeMap<>();
         for (int[] match : matches) {
-            if (!undefeated.contains(match[0]) && !singleLosers.contains(match[0])
-                && !multLosers.contains(match[0])) {
-                undefeated.add(match[0]);
-            }
-
-            if (!singleLosers.contains(match[1]) && !multLosers.contains(match[1])) {
-                undefeated.remove(match[1]);
-                singleLosers.add(match[1]);
-            }
-            else if (singleLosers.contains(match[1])) {
-                singleLosers.remove(match[1]);
-                multLosers.add(match[1]);
-            }
+            playerLosses.merge(match[0], 0, Integer::sum);
+            playerLosses.merge(match[1], 1, Integer::sum);
         }
+        
         List<List<Integer>> ret = new ArrayList<>(2);
-        ret.add(new ArrayList(undefeated));
-        ret.add(new ArrayList(singleLosers));
-        ret.get(0).sort(null);
-        ret.get(1).sort(null);
+        ret.add(new ArrayList<>());
+        ret.add(new ArrayList<>());
+
+        for (int player : playerLosses.keySet()) {
+            if (playerLosses.get(player) == 0) ret.get(0).add(player);
+            if (playerLosses.get(player) == 1) ret.get(1).add(player);
+        }
         return ret;
     }
 }
