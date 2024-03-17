@@ -8,12 +8,21 @@ class Solution {
             charFrequencies.merge(s.charAt(i), 1, Integer::sum);
         }
 
-        List<Character> sortedChars = new ArrayList<>(charFrequencies.keySet());
-        sortedChars.sort((a, b) -> charFrequencies.get(b) - charFrequencies.get(a));
+        List<Character>[] buckets = new List[s.length()];
+        for (char c : charFrequencies.keySet()) {
+            int frequency = charFrequencies.get(c) - 1;
+            if (buckets[frequency] == null) buckets[frequency] = new ArrayList<>();
+            buckets[frequency].add(c);
+        }
+
         StringBuilder ret = new StringBuilder(s.length());
-        for (char c : sortedChars) {
-            for (int i = 0; i < charFrequencies.get(c); i++) {
-                ret.append(c);
+        for (int i = buckets.length - 1; i >= 0; i--) {
+            if (buckets[i] != null) {
+                for (char c : buckets[i]) {
+                    for (int j = 0; j < i + 1; j++) {
+                        ret.append(c);
+                    }
+                }
             }
         }
         return ret.toString();
