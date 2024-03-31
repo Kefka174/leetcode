@@ -1,77 +1,73 @@
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
-class Solution { // O(m * nlogn) which is too slow
+class Solution { // O(mlogm + n)
     public List<Integer> findAllPeople(int n, int[][] meetings, int firstPerson) {
-        Arrays.sort(meetings, (a, b) -> a[2] - b[2]);
+        Map<Integer, List<int[]>> meetingMap = new TreeMap<>();
+        for (int[] meeting : meetings) {
+            if (!meetingMap.containsKey(meeting[2])) {
+                meetingMap.put(meeting[2], new ArrayList<>());
+            }
+            meetingMap.get(meeting[2]).add(new int[]{meeting[0], meeting[1]});
+        }
 
-        Set<Integer> secretHolders = new HashSet<Integer>();
-        secretHolders.add(0);
-        secretHolders.add(firstPerson);
-        UnionFind unionFind = new UnionFind();
-        for (int i = 0; i < meetings.length; i++) {
-            unionFind.union(meetings[i][0], meetings[i][1]);
-            if (i + 1 == meetings.length || meetings[i][2] != meetings[i + 1][2]) {
-                for (int person : Set.copyOf(secretHolders)) {
-                    secretHolders.add(unionFind.find(person));
+        UnionFind unionFind = new UnionFind(n);
+        unionFind.union(0, firstPerson);
+        for (int meetingTime : meetingMap.keySet()) {
+            for (int[] meeting : meetingMap.get(meetingTime)) {
+                unionFind.union(meeting[0], meeting[1]);
+            }
+            for (int[] meeting : meetingMap.get(meetingTime)) {
+                if (!unionFind.connected(meeting[0], 0)) {
+                    unionFind.resetNum(meeting[0]);
+                    unionFind.resetNum(meeting[1]);
                 }
-                for (int person : unionFind) {
-                    if (!secretHolders.contains(person) 
-                        && secretHolders.contains(unionFind.find(person))) {
-                        secretHolders.add(person);
-                    }
-                }
-                unionFind = new UnionFind();
             }
         }
-        return new ArrayList<>(secretHolders);
+        
+        List<Integer> secretHolders = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            if (unionFind.connected(i, 0)) secretHolders.add(i);
+        }
+        return secretHolders;
     }
 }
 
-class UnionFind implements Iterable<Integer> { // Todo: abstract type
-    private Map<Integer, Integer> rootMap;
-    private Map<Integer, Integer> treeHeights;
+class UnionFind {
+    private int[] roots;
+    private int[] heights;
 
-    public UnionFind() {
-        rootMap = new HashMap<>();
-        treeHeights = new HashMap<>();
+    public UnionFind(int capacity) {
+        roots = new int[capacity];
+        for (int i = 0; i < capacity; i++) roots[i] = i;
+        heights = new int[capacity];
     }
 
-    public boolean addAsRoot(int num) {
-        boolean alreadyContained = rootMap.containsKey(num);
-        rootMap.put(num, num);
-        treeHeights.put(num, 1);
-        return !alreadyContained;
+    public int find(int num) {
+        if (roots[num] != num) roots[num] = find(roots[num]);
+        return roots[num];
     }
 
-    public int find(int num) { // log(n)
-        if (!rootMap.containsKey(num)) addAsRoot(num);
-
-        int root = rootMap.get(num);
-        while (rootMap.get(root) != root) root = rootMap.get(root);
-        return root;
-    }
-
-    public void union(int num1, int num2) { // log(n)
+    public void union(int num1, int num2) {
         int root1 = find(num1), root2 = find(num2);
         if (root1 != root2) {
-            if (treeHeights.get(root2) > treeHeights.get(root1)) {
+            if (heights[root2] > heights[root1]) {
                 int temp = root1;
                 root1 = root2;
                 root2 = temp;
             }
 
-            rootMap.put(root2, root1);
-            treeHeights.remove(root2);
-            treeHeights.merge(root1, 1, Integer::sum);
+            roots[root2] = root1;
+            heights[root1]++;
         }
     }
 
-    @Override
-    public Iterator<Integer> iterator() {
-        return rootMap.keySet().iterator();
+    public boolean connected(int num1, int num2) {
+        return find(num1) == find(num2);
+    }
+
+    public void resetNum(int num) {
+        roots[num] = num;
+        heights[num] = 0;
     }
 }
