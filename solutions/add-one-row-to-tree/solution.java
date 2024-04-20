@@ -32,6 +32,19 @@ class Solution {
         }
         return currentLevel;
     }
+
+    
+    ////////////////////////////////////////////////////////////////////////////////
+    // negative depth means root should be a right child of new row node
+    public TreeNode addOneRowRecursive(TreeNode root, int val, int depth) {
+        if (depth == 1) return new TreeNode(val, root, null);
+        if (depth == -1) return new TreeNode(val, null, root);
+        if (root != null) {
+            root.left = addOneRowRecursive(root.left, val, Math.abs(depth) - 1);
+            root.right = addOneRowRecursive(root.right, val, -(Math.abs(depth) - 1));
+        }
+        return root;
+    }
 }
 
 
